@@ -3,7 +3,8 @@
 
 class jogoMemoria:
     def __init__(self):
-        print('Testando')
+        self.pontos = 0
+
 
 
 
