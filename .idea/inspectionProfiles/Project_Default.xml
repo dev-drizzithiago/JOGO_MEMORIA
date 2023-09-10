@@ -1,0 +1,83 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyBroadExceptionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyGlobalUndefinedInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyIncorrectDocstringInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+          <option value="E722" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyShadowingNamesInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyStatementEffectInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnboundLocalVariableInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnreachableCodeInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="SALA_CINEMA.principal.SalaCinema.cpf" />
+          <option value="SALA_CINEMA.principal.SalaCinema.nome" />
+          <option value="SALA_CINEMA.principal.SalaCinema.idade" />
+          <option value="SALA_CINEMA.principal.SalaCinema.email" />
+          <option value="SALA_CINEMA.principal.SalaCinema.dados" />
+          <option value="SALA_CINEMA.principal.SalaCinema.lista_cpf_cliente" />
+          <option value="SALA_CINEMA.principal.SalaCinema.informacoes_dados_cliente" />
+          <option value="SALA_CINEMA.principal.SalaCinema.lista_dados_cliente" />
+          <option value="SALA_CINEMA.principal.SalaCinema.add_registro_reserva" />
+          <option value="SALA_CINEMA.principal.SalaCinema.valor_registro_reserva" />
+          <option value="SALA_CINEMA.principal.SalaCinema.lista_indo_registro" />
+          <option value="SALA_CINEMA.principal.SalaCinema.lista_info_registro" />
+          <option value="SALA_CINEMA.principal.SalaCinema.dados_cliente_confirmado" />
+          <option value="principal.SalaCinema.cpf" />
+          <option value="principal.SalaCinema.nome" />
+          <option value="principal.SalaCinema.idade" />
+          <option value="principal.SalaCinema.email" />
+          <option value="principal.SalaCinema.add_registro_reserva" />
+          <option value="principal.SalaCinema.lista_info_registro" />
+          <option value="principal.SalaCinema.lista_cpf_cliente" />
+          <option value="principal.SalaCinema.lista_dados_cliente" />
+          <option value="principal.SalaCinema.confirmado_cpf_no_cadastro" />
+          <option value="str.__sub__" />
+          <option value="principal.SalaCinema.dados_cliente_dict" />
+          <option value="principal.SalaCinema.estrutura_cinema" />
+          <option value="typing.TextIO.append" />
+          <option value="principal.SalaCinema.cadeiras_reservadas" />
+          <option value="principal.SalaCinema.lista_reserva_sala_cinema" />
+          <option value="principal.SalaCinema.cinema_sala" />
+          <option value="principal.SalaCinema.verif_estrutura_reserva" />
+          <option value="list.split" />
+          <option value="principal.SalaCinema.cadeiras_cinema_reservado" />
+          <option value="leitura" />
+          <option value="nome_cadastro" />
+          <option value="cpf_cadastro" />
+          <option value="idade_cadastro" />
+          <option value="email_cadastro" />
+          <option value="ta.trend" />
+          <option value="principal.SalaCinema.lista_info_reserva" />
+          <option value="principal.SalaCinema.hora_atual" />
+          <option value="principal.SalaCinema.data_atual" />
+          <option value="principal.registro_filme" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnusedLocalInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
