@@ -22,14 +22,21 @@ if primeira_escolha and segunda_escolha and terceira_escolha == quarta_escolha:
 lista_tabela = [[terceira_escolha, quarta_escolha], [primeira_escolha, segunda_escolha],
                 [terceira_escolha, quarta_escolha], [primeira_escolha, segunda_escolha]]
 
-lista_tabela_2 = [primeira_escolha, segunda_escolha, terceira_escolha, quarta_escolha,
-                  primeira_escolha, segunda_escolha, terceira_escolha, quarta_escolha]
+lista_tabela_2 = [[primeira_escolha, segunda_escolha], [terceira_escolha, quarta_escolha],
+                  [primeira_escolha, segunda_escolha], [terceira_escolha, quarta_escolha]]
 
-random.shuffle(lista_tabela)
+res = random.sample(lista_tabela, len(lista_tabela))
 random.shuffle(lista_tabela_2)
-print(tabela)
+print(res)
+print(lista_tabela_2)
 
-for i in lista_tabela:
+for i in lista_tabela_2:
+    print()
+    for y in i:
+        print(f'[ {y} ]', end=' ')
+
+print()
+for i in res:
     print()
     for y in i:
         print(f'[ {y} ]', end=' ')
