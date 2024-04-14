@@ -1,4 +1,7 @@
-from random import random
+import random
 
-for i in range(2):
-    computador = random('a', 'b')
+computador = list()
+computador.append(random.randrange(1, 2))
+computador.append(random.randrange(1, 2))
+
+print(computador)
