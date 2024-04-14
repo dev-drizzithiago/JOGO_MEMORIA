@@ -1,7 +1,7 @@
 import random
 
-tabela = [[0, 2], [3, 4], [5, 6], [7, 8]]
-cobertura = [['0', '0'], ['0', '0'], ['0', '0'], ['0', '0']]
+tabela = [[0, 0], [0, 0], [0, 0], [0, 0]]
+cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
 
 possibilidade = ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'L']
 
@@ -16,11 +16,6 @@ if primeira_escolha and segunda_escolha == terceira_escolha:
     terceira_escolha = random.choice(possibilidade)
 if primeira_escolha and segunda_escolha and terceira_escolha == quarta_escolha:
     quarta_escolha = random.choice(possibilidade)
-
-print(primeira_escolha)
-print(segunda_escolha)
-print(terceira_escolha)
-print(quarta_escolha)
 
 tabela[0][0] = primeira_escolha
 tabela[0][1] = primeira_escolha
