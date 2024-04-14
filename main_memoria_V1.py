@@ -1,8 +1,4 @@
-from random import randint
+from random import random
 
-computador = [randint(1, 2), randint(1, 2)]
-
-for i in computador:
-    print(i)
-    for y in i:
-        print(y)
+for i in range(2):
+    computador = random('a', 'b')
