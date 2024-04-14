@@ -39,16 +39,16 @@ for i in lista_tabela:
         print(f'[ {y} ]', end=' ')
 
 while True:
-    print()
+    print(cobertura)
     for i in cobertura:
         print()
         for y in i:
             print(f'[ {y} ]', end=' ')
 
-    opcao = input('\nDigita um número')
-
-    if opcao == lista_tabela[0][0]:
-        cobertura[0][0] = lista_tabela[0][0]
+    opcao = input('\nDigita um número: ')
+    print(lista_tabela[0][0])
+    if opcao == cobertura[0][0]:
+        cobertura[0][0] = str(lista_tabela[0][0])
 
 
 
