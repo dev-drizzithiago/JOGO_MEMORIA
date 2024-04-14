@@ -1,6 +1,7 @@
 import random
 
 tabela = [[0, 0], [0, 0], [0, 0], [0, 0]]
+cobertura = [['0', '0'], ['0', '0'], ['0', '0'], ['0', '0']]
 
 possibilidade = ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'L']
 
@@ -34,4 +35,6 @@ for i in tabela:
     for y in i:
         print(f'[ {y} ]', end=' ')
 
-for i in 
+for i in cobertura:
+    for y in i:
+        print(f'[ {y} ]', end=' ')
