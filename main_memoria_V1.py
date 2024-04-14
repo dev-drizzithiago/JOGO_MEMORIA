@@ -16,10 +16,10 @@ if primeira_escolha and segunda_escolha == terceira_escolha:
 if primeira_escolha and segunda_escolha and terceira_escolha == quarta_escolha:
     quarta_escolha = random.choice(possibilidade)
 
-print(primeira_escolha)
+'''print(primeira_escolha)
 print(segunda_escolha)
 print(terceira_escolha)
-print(quarta_escolha)
+print(quarta_escolha)'''
 
 tabela[0][0] = primeira_escolha
 tabela[0][1] = primeira_escolha
@@ -30,8 +30,6 @@ tabela[2][1] = terceira_escolha
 tabela[3][0] = quarta_escolha
 tabela[3][1] = quarta_escolha
 
-
-
 for i in tabela:
     for y in i:
-        print(i, y)
+        print(y)
