@@ -38,13 +38,18 @@ for i in lista_tabela:
     for y in i:
         print(f'[ {y} ]', end=' ')
 
-print()
-for i in cobertura:
+while True:
     print()
-    for y in i:
-        print(f'[ {y} ]', end=' ')
+    for i in cobertura:
+        print()
+        for y in i:
+            print(f'[ {y} ]', end=' ')
 
-opcao = input('Digita uma letra')
+    opcao = input('\nDigita um número')
+
+    if opcao == lista_tabela[0][0]:
+        cobertura[0][0] = lista_tabela[0][0]
+
 
 
 
