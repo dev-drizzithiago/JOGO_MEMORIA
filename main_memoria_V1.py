@@ -21,19 +21,15 @@ if primeira_escolha and segunda_escolha and terceira_escolha == quarta_escolha:
 
 lista_tabela = [[terceira_escolha, quarta_escolha], [primeira_escolha, segunda_escolha],
                 [terceira_escolha, quarta_escolha], [primeira_escolha, segunda_escolha]]
-print(lista_tabela)
+
+lista_tabela_2 = [primeira_escolha, segunda_escolha, terceira_escolha, quarta_escolha,
+                  primeira_escolha, segunda_escolha, terceira_escolha, quarta_escolha]
 
 random.shuffle(lista_tabela)
-
+random.shuffle(lista_tabela_2)
 print(tabela)
 
 for i in lista_tabela:
-    print()
-    for y in i:
-        print(f'[ {y} ]', end=' ')
-
-print()
-for i in cobertura:
     print()
     for y in i:
         print(f'[ {y} ]', end=' ')
