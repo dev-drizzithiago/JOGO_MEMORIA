@@ -24,4 +24,4 @@ print(quarta_escolha)
 
 for i in tabela:
     for y in i:
-        print(y)
+        print([y], end=' ')
