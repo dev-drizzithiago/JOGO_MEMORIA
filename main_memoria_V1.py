@@ -32,9 +32,12 @@ tabela[3][0] = quarta_escolha
 tabela[3][1] = quarta_escolha
 
 for i in tabela:
+    print()
     for y in i:
         print(f'[ {y} ]', end=' ')
 
+print()
 for i in cobertura:
+    print()
     for y in i:
         print(f'[ {y} ]', end=' ')
