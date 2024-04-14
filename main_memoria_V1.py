@@ -2,8 +2,9 @@ import random
 
 tabela = [[0, 0], [0, 0], [0, 0], [0, 0]]
 cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
-
 possibilidade = ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'L']
+
+linha, coluna = 0, 0
 
 primeira_escolha = random.choice(possibilidade)
 segunda_escolha = random.choice(possibilidade)
@@ -17,6 +18,8 @@ if primeira_escolha and segunda_escolha == terceira_escolha:
 if primeira_escolha and segunda_escolha and terceira_escolha == quarta_escolha:
     quarta_escolha = random.choice(possibilidade)
 
+
+
 tabela[0][0] = primeira_escolha
 tabela[0][1] = primeira_escolha
 tabela[1][0] = segunda_escolha
@@ -25,6 +28,8 @@ tabela[2][0] = terceira_escolha
 tabela[2][1] = terceira_escolha
 tabela[3][0] = quarta_escolha
 tabela[3][1] = quarta_escolha
+
+tabela.reverse()
 
 for i in tabela:
     print()
