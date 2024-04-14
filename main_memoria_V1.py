@@ -33,3 +33,5 @@ tabela[3][1] = quarta_escolha
 for i in tabela:
     for y in i:
         print(f'[ {y} ]', end=' ')
+
+for i in 
