@@ -2,4 +2,7 @@ from random import randint
 
 computador = [randint(1, 2), randint(1, 2)]
 
-print(computador)
+for i in computador:
+    print(i)
+    for y in i:
+        print(y)
