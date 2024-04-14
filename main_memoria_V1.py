@@ -2,8 +2,8 @@ import random
 
 tabela = [[0, 0], [0, 0], [0, 0], [0, 0]]
 cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
-possibilidade = ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'H', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
-                 'X', 'Z', 'Y', 'K', 'W']
+possibilidade = ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'H', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+                 'V', 'X', 'Z', 'Y', 'K', 'W']
 
 linha, coluna = 0, 0
 
@@ -22,11 +22,7 @@ if primeira_escolha and segunda_escolha and terceira_escolha == quarta_escolha:
 lista_tabela = [[terceira_escolha, quarta_escolha], [primeira_escolha, segunda_escolha],
                 [terceira_escolha, quarta_escolha], [primeira_escolha, segunda_escolha]]
 
-
 random.shuffle(lista_tabela)
-
-
-print(lista_tabela)
 
 print(lista_tabela[0][0])
 print(lista_tabela[0][1])
@@ -47,3 +43,8 @@ for i in cobertura:
     print()
     for y in i:
         print(f'[ {y} ]', end=' ')
+
+opcao = input('Digita uma letra')
+
+
+
