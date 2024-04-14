@@ -23,10 +23,21 @@ lista_tabela = [[terceira_escolha, quarta_escolha], [primeira_escolha, segunda_e
                 [terceira_escolha, quarta_escolha], [primeira_escolha, segunda_escolha]]
 
 
-res = random.sample(lista_tabela, len(lista_tabela))
+random.shuffle(lista_tabela)
 
-print()
-for i in res:
+
+print(lista_tabela)
+
+print(lista_tabela[0][0])
+print(lista_tabela[0][1])
+print(lista_tabela[1][0])
+print(lista_tabela[1][1])
+print(lista_tabela[2][0])
+print(lista_tabela[2][1])
+print(lista_tabela[3][0])
+print(lista_tabela[3][1])
+
+for i in lista_tabela:
     print()
     for y in i:
         print(f'[ {y} ]', end=' ')
