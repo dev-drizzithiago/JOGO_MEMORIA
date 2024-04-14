@@ -2,7 +2,8 @@ import random
 
 tabela = [[0, 0], [0, 0], [0, 0], [0, 0]]
 cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
-possibilidade = ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'L']
+possibilidade = ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'H', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
+                 'X', 'Z', 'Y', 'K', 'W']
 
 linha, coluna = 0, 0
 
@@ -18,19 +19,9 @@ if primeira_escolha and segunda_escolha == terceira_escolha:
 if primeira_escolha and segunda_escolha and terceira_escolha == quarta_escolha:
     quarta_escolha = random.choice(possibilidade)
 
-lista_tabela = [primeira_escolha, primeira_escolha, segunda_escolha, segunda_escolha,
-                terceira_escolha, terceira_escolha, quarta_escolha, quarta_escolha]
+lista_tabela = [[terceira_escolha, quarta_escolha], [primeira_escolha, segunda_escolha],
+                [terceira_escolha, quarta_escolha], [primeira_escolha, segunda_escolha]]
 print(lista_tabela)
-
-for i in range(0, 1):
-    tabela[0][i] = primeira_escolha
-    tabela[0][i] = primeira_escolha
-    tabela[1][i] = segunda_escolha
-    tabela[1][i] = segunda_escolha
-    tabela[2][i] = terceira_escolha
-    tabela[2][i] = terceira_escolha
-    tabela[3][i] = quarta_escolha
-    tabela[3][i] = quarta_escolha
 
 random.shuffle(lista_tabela)
 
