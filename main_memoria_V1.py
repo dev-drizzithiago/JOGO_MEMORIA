@@ -19,7 +19,6 @@ if primeira_escolha and segunda_escolha and terceira_escolha == quarta_escolha:
     quarta_escolha = random.choice(possibilidade)
 
 
-
 tabela[0][0] = primeira_escolha
 tabela[0][1] = primeira_escolha
 tabela[1][0] = segunda_escolha
