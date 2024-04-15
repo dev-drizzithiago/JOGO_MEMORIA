@@ -10,7 +10,8 @@ possibilidade = ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'H', 'M', 'N'
 """#### Declaração de Variaveis"""
 linha, coluna = 0, 0
 contador = 1
-resposta = ''
+resposta_1 = ''
+resposta_2 = ''
 acerto = False
 
 primeira_escolha = random.choice(possibilidade)
@@ -50,9 +51,10 @@ while True:
         print()
         for y in i:
             print(f'[ {y} ]', end=' ')
-
-    opcao = input(f'\nDigita o {contador} número: ')
-    print(lista_tabela[0][0])
+    if contador == 1:
+        opcao = input(f'\nDigita a {contador}° POSIÇÂO: ')
+    else:
+        opcao = input(f'\nDigita o {contador} número: ')
 
     if opcao == cobertura[0][0]:
         cobertura[0][0] = str(lista_tabela[0][0])
@@ -60,24 +62,37 @@ while True:
 
     elif opcao == cobertura[0][1]:
         cobertura[0][1] = str(lista_tabela[0][1])
+        resposta_1 = str(lista_tabela[0][1])
 
     elif opcao == cobertura[1][0]:
         cobertura[1][0] = str(lista_tabela[1][0])
+        resposta_1 = str(lista_tabela[1][0])
 
     elif opcao == cobertura[1][1]:
         cobertura[1][1] = str(lista_tabela[1][1])
+        resposta_1 = str(lista_tabela[1][1])
 
     elif opcao == cobertura[2][0]:
         cobertura[2][0] = str(lista_tabela[2][0])
+        resposta_1 = str(lista_tabela[2][0])
 
     elif opcao == cobertura[2][1]:
         cobertura[2][1] = str(lista_tabela[2][1])
+        resposta_1 = str(lista_tabela[2][1])
 
     elif opcao == cobertura[3][0]:
         cobertura[3][0] = str(lista_tabela[3][0])
+        resposta_1 = str(lista_tabela[3][0])
 
     elif opcao == cobertura[3][1]:
         cobertura[3][1] = str(lista_tabela[3][1])
+        resposta_1 = str(lista_tabela[3][1])
+
+    """#### Soma mais 1 no contador"""
+    if contador == 2:
+        contador = 1
+    else:
+        contador += 1
 
 
 
