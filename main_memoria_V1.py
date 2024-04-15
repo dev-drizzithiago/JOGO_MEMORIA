@@ -9,6 +9,9 @@ possibilidade = ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'H', 'M', 'N'
 
 """#### Declaração de Variaveis"""
 linha, coluna = 0, 0
+contador = 1
+resposta = ''
+acerto = False
 
 primeira_escolha = random.choice(possibilidade)
 segunda_escolha = random.choice(possibilidade)
@@ -48,11 +51,12 @@ while True:
         for y in i:
             print(f'[ {y} ]', end=' ')
 
-    opcao = input('\nDigita um número: ')
+    opcao = input(f'\nDigita o {contador} número: ')
     print(lista_tabela[0][0])
 
     if opcao == cobertura[0][0]:
         cobertura[0][0] = str(lista_tabela[0][0])
+        resposta = str(lista_tabela[0][0])
 
     elif opcao == cobertura[0][1]:
         cobertura[0][1] = str(lista_tabela[0][1])
