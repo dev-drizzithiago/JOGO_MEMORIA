@@ -40,59 +40,67 @@ print(lista_tabela[2][1])
 print(lista_tabela[3][0])
 print(lista_tabela[3][1])
 
-for i in lista_tabela:
-    print()
-    for y in i:
-        print(f'[ {y} ]', end=' ')
-
 while True:
-    print(cobertura)
-    for i in cobertura:
+    for i in lista_tabela:
         print()
         for y in i:
             print(f'[ {y} ]', end=' ')
-    if contador == 1:
-        opcao = input(f'\nDigita a {contador}° POSIÇÂO: ')
-    else:
-        opcao = input(f'\nDigita o {contador} número: ')
 
-    if opcao == cobertura[0][0]:
-        cobertura[0][0] = str(lista_tabela[0][0])
-        resposta = str(lista_tabela[0][0])
+    while True:
+        print(cobertura)
+        for i in cobertura:
+            print()
+            for y in i:
+                print(f'[ {y} ]', end=' ')
+        if contador == 1:
+            opcao = input(f'\nDigita a {contador}° POSIÇÂO: ')
+        else:
+            resposta_2 = input(f'\nDigita o {contador} número: ')
 
-    elif opcao == cobertura[0][1]:
-        cobertura[0][1] = str(lista_tabela[0][1])
-        resposta_1 = str(lista_tabela[0][1])
+        if opcao == cobertura[0][0]:
+            cobertura[0][0] = str(lista_tabela[0][0])
+            resposta_1 = str(lista_tabela[0][0])
 
-    elif opcao == cobertura[1][0]:
-        cobertura[1][0] = str(lista_tabela[1][0])
-        resposta_1 = str(lista_tabela[1][0])
+        elif opcao == cobertura[0][1]:
+            cobertura[0][1] = str(lista_tabela[0][1])
+            resposta_1 = str(lista_tabela[0][1])
 
-    elif opcao == cobertura[1][1]:
-        cobertura[1][1] = str(lista_tabela[1][1])
-        resposta_1 = str(lista_tabela[1][1])
+        elif opcao == cobertura[1][0]:
+            cobertura[1][0] = str(lista_tabela[1][0])
+            resposta_1 = str(lista_tabela[1][0])
 
-    elif opcao == cobertura[2][0]:
-        cobertura[2][0] = str(lista_tabela[2][0])
-        resposta_1 = str(lista_tabela[2][0])
+        elif opcao == cobertura[1][1]:
+            cobertura[1][1] = str(lista_tabela[1][1])
+            resposta_1 = str(lista_tabela[1][1])
 
-    elif opcao == cobertura[2][1]:
-        cobertura[2][1] = str(lista_tabela[2][1])
-        resposta_1 = str(lista_tabela[2][1])
+        elif opcao == cobertura[2][0]:
+            cobertura[2][0] = str(lista_tabela[2][0])
+            resposta_1 = str(lista_tabela[2][0])
 
-    elif opcao == cobertura[3][0]:
-        cobertura[3][0] = str(lista_tabela[3][0])
-        resposta_1 = str(lista_tabela[3][0])
+        elif opcao == cobertura[2][1]:
+            cobertura[2][1] = str(lista_tabela[2][1])
+            resposta_1 = str(lista_tabela[2][1])
 
-    elif opcao == cobertura[3][1]:
-        cobertura[3][1] = str(lista_tabela[3][1])
-        resposta_1 = str(lista_tabela[3][1])
+        elif opcao == cobertura[3][0]:
+            cobertura[3][0] = str(lista_tabela[3][0])
+            resposta_1 = str(lista_tabela[3][0])
 
-    """#### Soma mais 1 no contador"""
-    if contador == 2:
-        contador = 1
-    else:
-        contador += 1
+        elif opcao == cobertura[3][1]:
+            cobertura[3][1] = str(lista_tabela[3][1])
+            resposta_1 = str(lista_tabela[3][1])
+        else:
+            print('Você escolheu uma opção errada. Digite de novo!')
+
+        if resposta_1 == resposta_2:
+            print('Parabens, você acertou!')
+        else:
+            print('Você errou, tente de novo!')
+
+        """#### Soma mais 1 no contador"""
+        if contador == 2:
+            contador = 1
+        else:
+            contador += 1
 
 
 
