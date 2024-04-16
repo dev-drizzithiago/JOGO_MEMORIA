@@ -134,6 +134,7 @@ while True:
         else:
             acerto = False
             print('\n[Você errou, tente de novo!]')
+            cartas_corretas = 0
 
         if not acerto:
             cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
