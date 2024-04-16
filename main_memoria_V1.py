@@ -93,6 +93,10 @@ while True:
     """#### Soma mais 1 no contador"""
     if contador == 2:
         contador = 1
+        if resposta_1 == resposta_2:
+            print('Parabens, você acertou!')
+        else:
+            print('Você errou, tente de novo!')
     else:
         contador += 1
 
