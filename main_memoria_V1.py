@@ -34,9 +34,6 @@ random.shuffle(lista_tabela)
 
 while True:
 
-    if not acerto:
-        cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
-
     for i in cobertura:
         print()
         for y in i:
@@ -122,10 +119,14 @@ while True:
             acerto = True
             print('Parabens, você acertou!')
         else:
+            acerto = False
             print('Você errou, tente de novo!')
 
         """# Desativa as opcções"""
         opcao_1 = False
         opcao_2 = False
+        
+        if not acerto:
+            cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
     else:
         contador += 1
