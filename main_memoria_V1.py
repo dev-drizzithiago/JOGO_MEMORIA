@@ -130,7 +130,7 @@ while True:
             print('\nParabens, você acertou!')
         else:
             acerto = False
-            print('\nVocê errou, tente de novo!')
+            print('\n[Você errou, tente de novo!]')
 
         if not acerto:
             cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
