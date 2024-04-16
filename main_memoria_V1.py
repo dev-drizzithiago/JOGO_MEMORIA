@@ -40,10 +40,10 @@ while True:
             print(f'[ {y} ]', end=' ')
 
     if contador == 1:
-        opcao = input(f'\nDigita a {contador}° POSIÇÂO: ')
+        opcao = input(f'\nDigita a [{contador}°] POSIÇÂO: ')
         opcao_1 = True
     else:
-        opcao = input(f'\nDigita a {contador}º POSIÇÃO: ')
+        opcao = input(f'\nDigita a [{contador}º] POSIÇÃO: ')
         opcao_2 = True
 
     if opcao == cobertura[0][0]:
@@ -55,7 +55,7 @@ while True:
             resposta_2 = str(lista_tabela[0][0])
 
     elif opcao == cobertura[0][1]:
-        print(f'Valor das opções: opção_1 {opcao_1} - opcao_2 {opcao_2}')
+        print(f'Valor das opções: opção_1 [{opcao_1}[ - opcao_2 [{opcao_2}]')
         cobertura[0][1] = str(lista_tabela[0][1])
         if opcao_1:
             resposta_1 = str(lista_tabela[0][1])
@@ -63,7 +63,7 @@ while True:
             resposta_2 = str(lista_tabela[0][1])
 
     elif opcao == cobertura[1][0]:
-        print(f'Valor das opções: opção_1 {opcao_1} - opcao_2 {opcao_2}')
+        print(f'Valor das opções: opção_1 [{opcao_1}[ - opcao_2 [{opcao_2}]')
         cobertura[1][0] = str(lista_tabela[1][0])
         if opcao_1:
             resposta_1 = str(lista_tabela[1][0])
@@ -71,7 +71,7 @@ while True:
             resposta_2 = str(lista_tabela[1][0])
 
     elif opcao == cobertura[1][1]:
-        print(f'Valor das opções: opção_1 {opcao_1} - opcao_2 {opcao_2}')
+        print(f'Valor das opções: opção_1 [{opcao_1}] - opcao_2 [{opcao_2}]')
         cobertura[1][1] = str(lista_tabela[1][1])
         if opcao_1:
             resposta_1 = str(lista_tabela[1][1])
@@ -79,7 +79,7 @@ while True:
             resposta_2 = str(lista_tabela[1][1])
 
     elif opcao == cobertura[2][0]:
-        print(f'Valor das opções: opção_1 {opcao_1} - opcao_2 {opcao_2}')
+        print(f'Valor das opções: opção_1 [{opcao_1}[ - opcao_2 [{opcao_2}]')
         cobertura[2][0] = str(lista_tabela[2][0])
         if opcao_1:
             resposta_1 = str(lista_tabela[2][0])
@@ -87,7 +87,7 @@ while True:
             resposta_2 = str(lista_tabela[2][0])
 
     elif opcao == cobertura[2][1]:
-        print(f'Valor das opções: opção_1 {opcao_1} - opcao_2 {opcao_2}')
+        print(f'Valor das opções: opção_1 [{opcao_1}] - opcao_2 [{opcao_2}]')
         cobertura[2][1] = str(lista_tabela[2][1])
         if opcao_1:
             resposta_1 = str(lista_tabela[2][1])
@@ -95,7 +95,7 @@ while True:
             resposta_2 = str(lista_tabela[2][1])
 
     elif opcao == cobertura[3][0]:
-        print(f'Valor das opções: opção_1 {opcao_1} - opcao_2 {opcao_2}')
+        print(f'Valor das opções: opção_1 [{opcao_1}] - opcao_2 [{opcao_2}]')
         cobertura[3][0] = str(lista_tabela[3][0])
         if opcao_1:
             resposta_1 = str(lista_tabela[3][0])
@@ -103,7 +103,7 @@ while True:
             resposta_2 = str(lista_tabela[3][0])
 
     elif opcao == cobertura[3][1]:
-        print(f'Valor das opções: opção_1 {opcao_1} - opcao_2 {opcao_2}')
+        print(f'Valor das opções: opção_1 [{opcao_1}] - opcao_2 [{opcao_2}]')
         cobertura[3][1] = str(lista_tabela[3][1])
         if opcao_1:
             resposta_1 = str(lista_tabela[3][1])
