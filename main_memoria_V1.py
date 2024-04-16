@@ -114,6 +114,7 @@ while True:
 
     """#### Soma mais 1 no contador"""
     if contador == 2:
+        print(f'Valor das respostas: resposta_1 {resposta_1} - resposta_2 {resposta_2}')
         for i in cobertura:
             print()
             for y in i:
