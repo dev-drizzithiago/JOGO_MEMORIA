@@ -13,7 +13,8 @@ contador = 1
 resposta_1 = ''
 resposta_2 = ''
 acerto = False
-resposta_ativa = True
+opcao_1 = False
+
 
 primeira_escolha = random.choice(possibilidade)
 segunda_escolha = random.choice(possibilidade)
@@ -43,8 +44,11 @@ while True:
     else:
         opcao = input(f'\nDigita a {contador}º POSIÇÃO: ')
 
+    if opcao_1:
+
     if opcao == cobertura[0][0]:
         cobertura[0][0] = str(lista_tabela[0][0])
+        opcao_1 = True
         resposta_1 = str(lista_tabela[0][0])
         resposta_2 = str(lista_tabela[0][0])
 
@@ -84,7 +88,6 @@ while True:
         resposta_2 = str(lista_tabela[3][1])
     else:
         print('Você escolheu uma opção errada. Digite de novo!')
-
 
     """#### Soma mais 1 no contador"""
     if contador == 2:
