@@ -114,18 +114,23 @@ while True:
 
     """#### Soma mais 1 no contador"""
     if contador == 2:
+        for i in cobertura:
+            print()
+            for y in i:
+                print(f'[ {y} ]', end=' ')
+
         contador = 1
         if resposta_1 == resposta_2:
             acerto = True
-            print('Parabens, você acertou!')
+            print('\nParabens, você acertou!')
         else:
             acerto = False
-            print('Você errou, tente de novo!')
+            print('\nVocê errou, tente de novo!')
 
         """# Desativa as opcções"""
         opcao_1 = False
         opcao_2 = False
-        
+
         if not acerto:
             cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
     else:
