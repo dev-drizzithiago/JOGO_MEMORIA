@@ -85,10 +85,6 @@ while True:
     else:
         print('Você escolheu uma opção errada. Digite de novo!')
 
-    if resposta_1 == resposta_2:
-        print('Parabens, você acertou!')
-    else:
-        print('Você errou, tente de novo!')
 
     """#### Soma mais 1 no contador"""
     if contador == 2:
