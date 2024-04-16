@@ -1,6 +1,5 @@
 import random
 
-
 """#### Estrutura do programa"""
 tabela = [[0, 0], [0, 0], [0, 0], [0, 0]]
 cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
@@ -15,7 +14,6 @@ resposta_2 = ''
 acerto = False
 opcao_1 = False
 opcao_2 = False
-
 
 primeira_escolha = random.choice(possibilidade)
 segunda_escolha = random.choice(possibilidade)
@@ -34,12 +32,16 @@ lista_tabela = [[terceira_escolha, quarta_escolha], [primeira_escolha, segunda_e
 
 random.shuffle(lista_tabela)
 
-
 while True:
+
+    if not acerto:
+        cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
+
     for i in cobertura:
         print()
         for y in i:
             print(f'[ {y} ]', end=' ')
+
     if contador == 1:
         opcao = input(f'\nDigita a {contador}° POSIÇÂO: ')
         opcao_1 = True
@@ -117,6 +119,7 @@ while True:
     if contador == 2:
         contador = 1
         if resposta_1 == resposta_2:
+            acerto = True
             print('Parabens, você acertou!')
         else:
             print('Você errou, tente de novo!')
@@ -126,7 +129,3 @@ while True:
         opcao_2 = False
     else:
         contador += 1
-
-
-
-
