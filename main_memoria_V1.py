@@ -112,9 +112,13 @@ while True:
     else:
         print('Você escolheu uma opção errada. Digite de novo!')
 
+    """# Desativa as opcções"""
+    opcao_1 = False
+    opcao_2 = False
+
     """#### Soma mais 1 no contador"""
     if contador == 2:
-        print(f'Valor das respostas: resposta_1 {resposta_1} - resposta_2 {resposta_2}')
+        print(f'Valor das respostas: resposta_1 [{resposta_1}] - resposta_2 [{resposta_2}]')
         for i in cobertura:
             print()
             for y in i:
@@ -127,10 +131,6 @@ while True:
         else:
             acerto = False
             print('\nVocê errou, tente de novo!')
-
-        """# Desativa as opcções"""
-        opcao_1 = False
-        opcao_2 = False
 
         if not acerto:
             cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
