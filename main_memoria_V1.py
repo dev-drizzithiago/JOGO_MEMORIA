@@ -9,6 +9,8 @@ possibilidade = ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'H', 'M', 'N'
 """#### Declaração de Variaveis"""
 linha, coluna = 0, 0
 contador = 1
+pontuacao = 0
+cartas_corretas = 0
 resposta_1 = ''
 resposta_2 = ''
 acerto = False
@@ -128,6 +130,7 @@ while True:
         if resposta_1 == resposta_2:
             acerto = True
             print('\nParabens, você acertou!')
+            cartas_corretas += 1
         else:
             acerto = False
             print('\n[Você errou, tente de novo!]')
@@ -136,3 +139,8 @@ while True:
             cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
     else:
         contador += 1
+
+    if cartas_corretas == 4:
+        pontuacao += 1
+
+    print(f'Sua pontuação é: {pontuacao}')
