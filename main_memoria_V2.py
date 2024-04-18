@@ -5,10 +5,11 @@ lista_de_emojes = []
 
 
 def leia_int(valor):
-    try:
-        return input(int(valor))
-    except:
-        print(f'Opção INVALIDA!, Digite novamente')
+    while True:
+        try:
+            return input(int(valor))
+        except:
+            print(f'Opção INVALIDA!, Digite novamente')
 
 
 while True:
