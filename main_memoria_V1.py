@@ -1,4 +1,6 @@
 import random
+from time import sleep
+
 
 """#### Estrutura do programa"""
 tabela = [[0, 0], [0, 0], [0, 0], [0, 0]]
@@ -134,6 +136,7 @@ while True:
         else:
             acerto = False
             print('\n[Você errou, tente de novo!]')
+            sleep(2)
             cartas_corretas = 0
 
         if not acerto:
