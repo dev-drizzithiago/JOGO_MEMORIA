@@ -5,7 +5,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Interpretador" />
       <excludeFolder url="file://$MODULE_DIR$/Interpretador_jogo_da_memoria" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.12 (JOGO_MEMORIA)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.12 (Interpretador)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
