@@ -1,8 +1,14 @@
 import random
 from time import sleep
 
-lista_de_emojes = []
+lista_de_emojes = ['😄', '😁', '😃']
+lista_emoj_signos = ['🕉️', '✡️', '☸️', '☯️', '✝️',
+                     '☦️', '☪️', '☮️', '🕎', '🔯',
+                     '🪯', '♈', '♉', '♊', '♋',
+                     '♌', '♍', '♎', '♏', '♐',
+                     '♑', '♒', '♓', '⛎', '🛐']
 
+print(lista_emoj_signos)
 
 def leia_int(valor):
     while True:
@@ -11,6 +17,9 @@ def leia_int(valor):
             return valor_int
         except:
             print(f'Opção INVALIDA!, Digite novamente')
+
+def inicio_jogo():
+    pass
 
 
 while True:
