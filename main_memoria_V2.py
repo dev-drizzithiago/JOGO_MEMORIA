@@ -1,7 +1,7 @@
 import random
 from time import sleep
 
-lista_de_emojes = ['😄', '😁', '😃']
+lista_cobertura_ = ['😄']
 lista_emoj_signos = ['🕉️', '✡️', '☸️', '☯️', '✝️',
                      '☦️', '☪️', '☮️', '🕎', '🔯',
                      '🪯', '♈', '♉', '♊', '♋',
