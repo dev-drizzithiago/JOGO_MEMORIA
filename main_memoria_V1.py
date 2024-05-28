@@ -3,7 +3,6 @@ from time import sleep
 
 
 """#### Estrutura do programa"""
-tabela = [[0, 0], [0, 0], [0, 0], [0, 0]]
 cobertura = [['1', '2'], ['3', '4'], ['5', '6'], ['7', '8']]
 possibilidade = ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'H', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
                  'V', 'X', 'Z', 'Y', 'K', 'W']
