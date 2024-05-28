@@ -10,6 +10,9 @@ lista_emoj_signos = ['🕉️', '✡️', '☸️', '☯️', '✝️',
 
 print(lista_emoj_signos)
 
+for valor in random.random(lista_de_emojes):
+    print(valor)
+
 def leia_int(valor):
     while True:
         try:
