@@ -8,17 +8,17 @@ lista_emoj_signos = ['🕉️', '✡️', '☸️', '☯️', '✝️',
                      '♌', '♍', '♎', '♏', '♐',
                      '♑', '♒', '♓', '⛎', '🛐']
 
-print(lista_emoj_signos)
 
-for valor in random.choice(lista_de_emojes):
-    print(valor)
-for valor in lista_emoj_signos:
-    print(valor)
+sorteio_emoj = random.choice(lista_emoj_signos)
 
-def leia_int(valor):
+for valor in sorteio_emoj:
+    print(valor, end=' ')
+
+
+def leia_int(valor_entrada):
     while True:
         try:
-            valor_int = int(input(valor))
+            valor_int = int(input(valor_entrada))
             return valor_int
         except:
             print(f'Opção INVALIDA!, Digite novamente')
