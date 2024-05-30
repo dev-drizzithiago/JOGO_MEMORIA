@@ -25,6 +25,10 @@ for linha in lista_cobertura_:
 
 
 def leia_int(valor_entrada):
+    """
+    :param valor_entrada: Entra do valor da opção em menus
+    :return: Se o valor for número inteiro, retorna para a opção escolhida
+    """
     while True:
         try:
             valor_int = int(input(valor_entrada))
