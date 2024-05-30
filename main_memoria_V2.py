@@ -15,8 +15,10 @@ lista_emoj_signos = ['🕉️', '✡️', '☸️', '☯️', '✝️',
 
 sorteio_emoj = random.choice(lista_emoj_signos)
 
-for valor in sorteio_emoj:
-    print(valor, end=' ')
+for linha in lista_cobertura_:
+    print()
+    for coluna in linha:
+        print(coluna, end=' ')
 
 
 def leia_int(valor_entrada):
