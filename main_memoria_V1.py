@@ -23,6 +23,7 @@ segunda_escolha = random.choice(possibilidade)
 terceira_escolha = random.choice(possibilidade)
 quarta_escolha = random.choice(possibilidade)
 
+
 if primeira_escolha == segunda_escolha:
     segunda_escolha = random.choice(possibilidade)
 if primeira_escolha and segunda_escolha == terceira_escolha:
