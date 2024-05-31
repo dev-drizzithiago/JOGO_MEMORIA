@@ -18,6 +18,8 @@ lista_emoj_signos = ['🕉️', '✡️', '☸️', '☯️', '✝️',
 
 sorteio_emoj = random.choice(lista_emoj_signos)
 
+print(sorteio_emoj)
+
 for linha in lista_cobertura_:
     print()
     for coluna in linha:
