@@ -12,15 +12,13 @@ lista_cobertura_ = (['              ', ' A', '   B', '   C', '   D', '   E'],
                     ['            5', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
                     ['            6', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '])
 
-lista_emoj_signos = [' 🕉️ ', ' ✡️ ', ' ☸️ ', ' ☯️ ', ' ✝️ ',
-                     ' ☦️ ', ' ☪️ ', ' ☮️ ', ' 🕎 ', ' 🔯 ',
-                     ' 🪯 ', ' ♈ ', ' ♉ ', ' ♊ ', ' ♋ ',
-                     ' ♌ ', ' ♍ ', ' ♎ ', ' ♏ ', ' ♐ ',
-                     ' ♑ ', ' ♒ ', ' ♓ ', ' ⛎ ', ' 🛐 ']
-
+lista_emoj_signos = ['🐶', '🪁', '😈', '🧠', '💩',
+                     '🤚', '👗', '🐬', '🐊', '🦉',
+                     '🐧', '🌲', '🍕', '🍩', '🏠',
+                     '🪐', '🌠', '🏐', '🎵', '🎼',
+                     '💣', '🩸', '🧿', '☎', '🎤']
 
 for contador in range(15):
-    print(contador)
     sorteio_emoj.append(random.choice(lista_emoj_signos[contador]))
 
 print(sorteio_emoj)
@@ -33,6 +31,7 @@ for linha in lista_cobertura_:
 for linhas in sorteio_emoj:
     pass
 
+
 def leia_int(valor_entrada):
     """
     :param valor_entrada: Entra do valor da opção em menus
@@ -44,6 +43,7 @@ def leia_int(valor_entrada):
             return valor_int
         except:
             print(f'Opção INVALIDA!, Digite novamente')
+
 
 def inicio_jogo():
     pass
