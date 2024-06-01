@@ -60,10 +60,9 @@ def iniciando_jogo():
         for coluna in linha:
             print(coluna, end=' ')
 
+    opc_posicao = 
 
 while True:
-
-
 
     print(f'\n{linha_aparencia}')
     print('''
