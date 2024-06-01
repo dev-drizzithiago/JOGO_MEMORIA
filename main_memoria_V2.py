@@ -6,6 +6,8 @@ sorteio_emoj = list()
 dados_jogo = list()
 inicio_jogo = list()
 
+linha_aparencia = '--==--' * 15
+
 lista_cobertura_ = (['              ', ' A', '   B', '   C', '   D', '   E'],
                     ['            1', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
                     ['            2', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
@@ -54,7 +56,7 @@ def iniciando_jogo():
 
 while True:
 
-    linha_aparencia = '--==--' * 15
+
 
     print(f'\n{linha_aparencia}')
     print('''
