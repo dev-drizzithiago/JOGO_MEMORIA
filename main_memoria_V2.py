@@ -23,20 +23,10 @@ lista_emoj_signos = ['🐶', '🪁', '😈', '🧠', '💩',
 for contador in range(15):
     sorteio_emoj.append(random.choice(lista_emoj_signos))
 
-print(sorteio_emoj)
-
 for dobro in sorteio_emoj:
     if not dobro in dados_jogo:
         dados_jogo.append(dobro)
         dados_jogo.append(dobro)
-
-print(dados_jogo)
-
-for linha in lista_cobertura_:
-    print()
-    for coluna in linha:
-        print(coluna, end=' ')
-
 
 def leia_int(valor_entrada):
     """
@@ -52,7 +42,12 @@ def leia_int(valor_entrada):
 
 
 def inicio_jogo():
-    pass
+
+    print(linha_aparencia)
+    for linha in lista_cobertura_:
+        print()
+        for coluna in linha:
+            print(coluna, end=' ')
 
 
 while True:
@@ -67,7 +62,7 @@ while True:
     ''')
     resp_opcao_menu = leia_int('Escolha uma OPÇÂO: ')
     if resp_opcao_menu == 1:
-        pass
+        inicio_jogo
     elif resp_opcao_menu == 2:
         pass
     elif resp_opcao_menu == 0:
