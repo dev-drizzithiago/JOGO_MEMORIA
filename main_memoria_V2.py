@@ -18,12 +18,10 @@ lista_emoj_signos = ['🐶', '🪁', '😈', '🧠', '💩',
                      '🪐', '🌠', '🏐', '🎵', '🎼',
                      '💣', '🩸', '🧿', '☎', '🎤']
 
-for i in range(10):
-    for contador in range(5):
-        sorteio_emoj.append(random.choice(lista_emoj_signos))
 
-    print(sorteio_emoj)
-    del sorteio_emoj[:]
+for contador in range(5):
+    sorteio_emoj.append(random.choice(lista_emoj_signos))
+
 
 for linha in lista_cobertura_:
     print()
