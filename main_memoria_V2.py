@@ -22,8 +22,8 @@ for i in range(10):
     for contador in range(5):
         sorteio_emoj.append(random.choice(lista_emoj_signos))
 
-
-print(sorteio_emoj)
+    print(sorteio_emoj)
+    del sorteio_emoj[:]
 
 for linha in lista_cobertura_:
     print()
