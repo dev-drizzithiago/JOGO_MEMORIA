@@ -4,6 +4,7 @@ from time import sleep
 """#### """
 sorteio_emoj = list()
 dados_jogo = list()
+inicio_jogo = list()
 
 lista_cobertura_ = (['              ', ' A', '   B', '   C', '   D', '   E'],
                     ['            1', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
