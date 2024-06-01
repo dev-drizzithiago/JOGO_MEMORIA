@@ -76,6 +76,7 @@ while True:
             [0] Sair
     ''')
     resp_opcao_menu = leia_int('Escolha uma OPÇÂO: ')
+
     if resp_opcao_menu == 1:
         iniciando_jogo()
 
