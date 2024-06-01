@@ -27,7 +27,8 @@ for contador in range(15):
 print(sorteio_emoj)
 
 for dobro in sorteio_emoj:
-    dados_jogo.append(dobro * 2)
+    dados_jogo.append(dobro)
+    dados_jogo.append(dobro)
 
 print(dados_jogo)
 
