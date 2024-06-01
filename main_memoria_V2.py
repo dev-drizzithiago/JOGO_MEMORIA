@@ -8,22 +8,28 @@ inicio_jogo = list()
 
 linha_aparencia = '--==--' * 15
 
-lista_cobertura_ = (['              ', ' A', '   B', '   C', '   D', '   E'],
-                    ['            1', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
-                    ['            2', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
-                    ['            3', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
-                    ['            4', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
-                    ['            5', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
-                    ['            6', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '])
 
-lista_emoj_signos = ['🐶', '🪁', '😈', '🧠', '💩',
-                     '🤚', '👗', '🐬', '🐊', '🦉',
-                     '🐧', '🌲', '🍕', '🍩', '🏠',
-                     '🪐', '🌠', '🏐', '🎵', '🎼',
-                     '💣', '🩸', '🧿', '☎', '🎤']
+def construcao_do_jogo():
+    """
+    Função responsável em construir toda a estrutura do jogo.
 
+    :return:
+    """
 
-def contrucao_do_jogo():
+    lista_cobertura_ = (['              ', ' A', '   B', '   C', '   D', '   E'],
+                        ['            1', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
+                        ['            2', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
+                        ['            3', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
+                        ['            4', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
+                        ['            5', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
+                        ['            6', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '])
+
+    lista_emoj_signos = ['🐶', '🪁', '😈', '🧠', '💩',
+                         '🤚', '👗', '🐬', '🐊', '🦉',
+                         '🐧', '🌲', '🍕', '🍩', '🏠',
+                         '🪐', '🌠', '🏐', '🎵', '🎼',
+                         '💣', '🩸', '🧿', '☎', '🎤']
+
     for contador in range(15):
         sorteio_emoj.append(random.choice(lista_emoj_signos))
 
@@ -31,6 +37,7 @@ def contrucao_do_jogo():
         if not dobro in dados_jogo:
             dados_jogo.append(dobro)
             dados_jogo.append(dobro)
+    return lista_cobertura_
 
 def leia_int(valor_entrada):
     """
@@ -46,9 +53,9 @@ def leia_int(valor_entrada):
 
 
 def iniciando_jogo():
-
+    valor_inicio = construcao_do_jogo()
     print(linha_aparencia)
-    for linha in lista_cobertura_:
+    for linha in valor_inicio:
         print()
         for coluna in linha:
             print(coluna, end=' ')
