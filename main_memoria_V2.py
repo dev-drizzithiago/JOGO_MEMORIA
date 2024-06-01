@@ -20,13 +20,15 @@ lista_emoj_signos = ['🐶', '🪁', '😈', '🧠', '💩',
                      '🪐', '🌠', '🏐', '🎵', '🎼',
                      '💣', '🩸', '🧿', '☎', '🎤']
 
-for contador in range(15):
-    sorteio_emoj.append(random.choice(lista_emoj_signos))
 
-for dobro in sorteio_emoj:
-    if not dobro in dados_jogo:
-        dados_jogo.append(dobro)
-        dados_jogo.append(dobro)
+def contrucao_do_jogo():
+    for contador in range(15):
+        sorteio_emoj.append(random.choice(lista_emoj_signos))
+
+    for dobro in sorteio_emoj:
+        if not dobro in dados_jogo:
+            dados_jogo.append(dobro)
+            dados_jogo.append(dobro)
 
 def leia_int(valor_entrada):
     """
@@ -41,7 +43,7 @@ def leia_int(valor_entrada):
             print(f'Opção INVALIDA!, Digite novamente')
 
 
-def inicio_jogo():
+def iniciando_jogo():
 
     print(linha_aparencia)
     for linha in lista_cobertura_:
@@ -62,12 +64,15 @@ while True:
     ''')
     resp_opcao_menu = leia_int('Escolha uma OPÇÂO: ')
     if resp_opcao_menu == 1:
-        inicio_jogo
+        iniciando_jogo()
+
     elif resp_opcao_menu == 2:
         pass
+
     elif resp_opcao_menu == 0:
         print('Fechando o Programa')
         sleep(1)
         break
+
     else:
         print('Essa opção não faz parte do menu!')
