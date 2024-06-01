@@ -29,7 +29,7 @@ for dobro in sorteio_emoj:
     if not dobro in dados_jogo:
         dados_jogo.append(dobro)
         dados_jogo.append(dobro)
-    
+
 print(dados_jogo)
 
 for linha in lista_cobertura_:
