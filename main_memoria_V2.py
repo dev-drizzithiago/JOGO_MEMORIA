@@ -37,7 +37,7 @@ def construcao_do_jogo():
         if not dobro in dados_jogo:
             dados_jogo.append(dobro)
             dados_jogo.append(dobro)
-    return lista_cobertura_
+    return lista_cobertura_, dados_jogo
 
 def leia_int(valor_entrada):
     """
@@ -53,14 +53,19 @@ def leia_int(valor_entrada):
 
 
 def iniciando_jogo():
-    valor_inicio = construcao_do_jogo()
-    print(linha_aparencia)
-    for linha in valor_inicio:
-        print()
-        for coluna in linha:
-            print(coluna, end=' ')
+    posicao_escolha = 1
+    valor_inicio, dados_sorteio = construcao_do_jogo()
+    while True:
+        print(dados_sorteio)
+        print(linha_aparencia)
+        for linha in valor_inicio:
+            print()
+            for coluna in linha:
+                print(coluna, end=' ')
 
-    opc_posicao = 
+        print()
+        print(linha_aparencia)
+        opc_posicao = input(f"Escolha a {posicao_escolha}º posição: ")
 
 while True:
 
