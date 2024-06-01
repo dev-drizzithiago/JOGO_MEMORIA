@@ -28,9 +28,6 @@ for linha in lista_cobertura_:
     for coluna in linha:
         print(coluna, end=' ')
 
-for linhas in sorteio_emoj:
-    pass
-
 
 def leia_int(valor_entrada):
     """
