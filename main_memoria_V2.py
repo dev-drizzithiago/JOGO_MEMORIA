@@ -3,6 +3,7 @@ from time import sleep
 
 """#### """
 sorteio_emoj = list()
+dados_jogo = list()
 
 lista_cobertura_ = (['              ', ' A', '   B', '   C', '   D', '   E'],
                     ['            1', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
@@ -19,10 +20,15 @@ lista_emoj_signos = ['🐶', '🪁', '😈', '🧠', '💩',
                      '💣', '🩸', '🧿', '☎', '🎤']
 
 
-for contador in range(6):
+for contador in range(15):
     sorteio_emoj.append(random.choice(lista_emoj_signos))
 
 print(sorteio_emoj)
+
+for dobro in sorteio_emoj:
+    dados_jogo.append(dobro * 2)
+
+print(dados_jogo)
 
 for linha in lista_cobertura_:
     print()
