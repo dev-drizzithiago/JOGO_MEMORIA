@@ -36,15 +36,10 @@ def construcao_do_jogo():
 
     contador = 1
     for selecao_emoj in sorteio_emoj:
-        if selecao_emoj in dados_jogo:
+        if not selecao_emoj in dados_jogo:
             dados_jogo.append(selecao_emoj)
             dados_jogo.append(selecao_emoj)
             estrutura_final_jogo.append(dados_jogo)
-
-
-    print(estrutura_final_jogo)
-    print(dados_jogo)
-    print(len(dados_jogo))
 
     print(estrutura_final_jogo)
     return lista_cobertura_, dados_jogo
