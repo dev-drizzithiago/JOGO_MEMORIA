@@ -39,11 +39,13 @@ def construcao_do_jogo():
         if not selecao_emoj in dados_jogo:
             dados_jogo.append(selecao_emoj)
             dados_jogo.append(selecao_emoj)
+            print(dados_jogo)
+            estrutura_final_jogo.append(dados_jogo)
 
+
+    print(estrutura_final_jogo)
     print(dados_jogo)
     print(len(dados_jogo))
-    for contador in range(30):
-        estrutura_final_jogo.append(random.choice(dados_jogo))
 
     print(estrutura_final_jogo)
     return lista_cobertura_, dados_jogo
