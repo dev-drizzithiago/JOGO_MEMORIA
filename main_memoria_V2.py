@@ -31,7 +31,7 @@ def construcao_do_jogo():
                          '🪐', '🌠', '🏐', '🎵', '🎼',
                          '💣', '🩸', '🧿', '☎', '🎤']
 
-    for contador in range(15):
+    for contador in range(21):
         sorteio_emoj.append(random.choice(lista_emoj_signos))
 
     contador = 1
@@ -39,9 +39,11 @@ def construcao_do_jogo():
         if not selecao_emoj in dados_jogo:
             dados_jogo.append(selecao_emoj)
             dados_jogo.append(selecao_emoj)
-    for embaralhar_emojs in range(30):
-        estrutura_final_jogo.append(random.choice(embaralhar_emojs))
 
+    print(dados_jogo)
+    print(len(dados_jogo))
+    for contador in range(30):
+        estrutura_final_jogo.append(random.choice(dados_jogo))
 
     print(estrutura_final_jogo)
     return lista_cobertura_, dados_jogo
@@ -63,7 +65,7 @@ def iniciando_jogo():
     posicao_escolha = 1
     valor_inicio, dados_sorteio = construcao_do_jogo()
     while True:
-        print(dados_sorteio)
+        # print(dados_sorteio)
         print(linha_aparencia)
         for linha in valor_inicio:
             print()
