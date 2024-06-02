@@ -5,6 +5,7 @@ from time import sleep
 sorteio_emoj = list()
 dados_jogo = list()
 inicio_jogo = list()
+estrutura_final_jogo = list()
 
 linha_aparencia = '--==--' * 15
 
@@ -33,10 +34,15 @@ def construcao_do_jogo():
     for contador in range(15):
         sorteio_emoj.append(random.choice(lista_emoj_signos))
 
+    contador = 1
     for dobro in sorteio_emoj:
         if not dobro in dados_jogo:
             dados_jogo.append(dobro)
             dados_jogo.append(dobro)
+            if contador == 2:
+                estrutura_final_jogo = [dados_jogo]
+
+    print(estrutura_final_jogo)
     return lista_cobertura_, dados_jogo
 
 def leia_int(valor_entrada):
