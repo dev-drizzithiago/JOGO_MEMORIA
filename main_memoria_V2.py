@@ -36,10 +36,9 @@ def construcao_do_jogo():
 
     contador = 1
     for selecao_emoj in sorteio_emoj:
-        if not selecao_emoj in dados_jogo:
+        if selecao_emoj in dados_jogo:
             dados_jogo.append(selecao_emoj)
             dados_jogo.append(selecao_emoj)
-            print(dados_jogo)
             estrutura_final_jogo.append(dados_jogo)
 
 
