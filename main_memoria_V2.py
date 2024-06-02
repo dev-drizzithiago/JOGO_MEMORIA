@@ -39,10 +39,8 @@ def construcao_do_jogo():
         if not dobro in dados_jogo:
             dados_jogo.append(dobro)
             dados_jogo.append(dobro)
-            if contador == 2:
-                estrutura_final_jogo = [dados_jogo]
 
-    print(estrutura_final_jogo)
+
     return lista_cobertura_, dados_jogo
 
 def leia_int(valor_entrada):
