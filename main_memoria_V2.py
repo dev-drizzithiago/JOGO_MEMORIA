@@ -35,11 +35,13 @@ def construcao_do_jogo():
         sorteio_emoj.append(random.choice(lista_emoj_signos))
 
     contador = 1
-    for selecao_emoj in sorteio_emoj:
-        if not selecao_emoj in dados_jogo:
-            dados_jogo.append(selecao_emoj)
-            dados_jogo.append(selecao_emoj)
-        estrutura_final_jogo.append(dados_jogo)
+    for indice in range(len(sorteio_emoj)):
+
+        for indice_dados in range(15):
+            if not dados_jogo in sorteio_emoj:
+                dados_jogo.append(sorteio_emoj[indice])
+                dados_jogo.append(sorteio_emoj[indice])
+
 
     print(estrutura_final_jogo)
     return lista_cobertura_, dados_jogo
