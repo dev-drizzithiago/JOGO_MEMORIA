@@ -34,12 +34,10 @@ def construcao_do_jogo():
     for contador in range(21):
         sorteio_emoj.append(random.choice(lista_emoj_signos))
 
-    contador = 1
     for selecao_emoj in sorteio_emoj:
         if not selecao_emoj in dados_jogo:
             dados_jogo.append(selecao_emoj)
             dados_jogo.append(selecao_emoj)
-    estrutura_final_jogo.append(dados_jogo)
 
     print(random.choice(estrutura_final_jogo))
     return lista_cobertura_, dados_jogo
