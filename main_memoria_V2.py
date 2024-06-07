@@ -1,5 +1,6 @@
 import random
 from time import sleep
+import numpy
 
 """#### """
 sorteio_emoj = list()
@@ -25,11 +26,11 @@ def construcao_do_jogo():
                         ['            5', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
                         ['            6', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '])
 
-    lista_emoj_signos = ['🐶', '🪁', '😈', '🧠', '💩',
-                         '🤚', '👗', '🐬', '🐊', '🦉',
-                         '🐧', '🌲', '🍕', '🍩', '🏠',
-                         '🪐', '🌠', '🏐', '🎵', '🎼',
-                         '💣', '🩸', '🧿', '☎', '🎤']
+    lista_emoj_signos = numpy.array(['🐶', '🪁', '😈', '🧠', '💩',
+                                     '🤚', '👗', '🐬', '🐊', '🦉',
+                                     '🐧', '🌲', '🍕', '🍩', '🏠',
+                                     '🪐', '🌠', '🏐', '🎵', '🎼',
+                                     '💣', '🩸', '🧿', '☎', '🎤'])
 
     for contador in range(21):
         sorteio_emoj.append(random.choice(lista_emoj_signos))
@@ -38,9 +39,10 @@ def construcao_do_jogo():
         if not selecao_emoj in dados_jogo:
             dados_jogo.append(selecao_emoj)
             dados_jogo.append(selecao_emoj)
-
-    print(random.choice(estrutura_final_jogo))
+    teste = lista_emoj_signos.reshape(5, 5)
+    print(teste)
     return lista_cobertura_, dados_jogo
+
 
 def leia_int(valor_entrada):
     """
@@ -69,6 +71,7 @@ def iniciando_jogo():
         print()
         print(linha_aparencia)
         opc_posicao = input(f"Escolha a {posicao_escolha}º posição: ")
+
 
 while True:
 
