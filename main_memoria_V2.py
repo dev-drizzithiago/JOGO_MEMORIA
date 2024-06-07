@@ -30,18 +30,19 @@ def construcao_do_jogo():
                          ['🐧', '🌲', '🍕', '🍩', '🏠'],
                          ['🪐', '🌠', '🏐', '🎵', '🎼'],
                          ['💣', '🩸', '🧿', '☎', '🎤']]
-
-    for contador in range(21):
-        sorteio_emoj.append(random.choice(lista_emoj_signos))
-
-    contador = 1
-    for selecao_emoj in sorteio_emoj:
+    selecao_emoj = []
+    for linha in range(0, 5):
+        for coluna in range (0, 5):
+            matriz = []
         if not selecao_emoj in dados_jogo:
-            dados_jogo.append(selecao_emoj)
-            dados_jogo.append(selecao_emoj)
+            dados_jogo.append(random.choice(lista_emoj_signos))
+            dados_jogo.append(random.choice(lista_emoj_signos))
+        matriz.append(dados_jogo)
 
-
-    print(estrutura_final_jogo)
+    for linha in range(matriz):
+        print()
+        for coluna in range(matriz):
+            print(matriz[linha][coluna])
     return lista_cobertura_, dados_jogo
 
 def leia_int(valor_entrada):
