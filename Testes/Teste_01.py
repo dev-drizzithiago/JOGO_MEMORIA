@@ -10,6 +10,6 @@ def cria_matriz(m, n, valor):
 
 linha = 5
 coluna = 5
-valor = 0
+valor = 11
 
-cria_matriz(linha, coluna)
+cria_matriz(linha, coluna, valor)
