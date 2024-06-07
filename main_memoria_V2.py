@@ -40,7 +40,8 @@ def construcao_do_jogo():
             dados_jogo.append(selecao_emoj)
             dados_jogo.append(selecao_emoj)
     for contator in range(21):
-        estrutura_final_jogo.append(random.choice(dados_jogo))
+        if not dados_jogo in estrutura_final_jogo:
+            estrutura_final_jogo.append(random.choice(dados_jogo))
 
     print(estrutura_final_jogo)
     return lista_cobertura_, dados_jogo
