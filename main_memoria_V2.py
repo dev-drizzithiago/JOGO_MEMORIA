@@ -41,7 +41,7 @@ def construcao_do_jogo():
             dados_jogo.append(selecao_emoj)
     estrutura_final_jogo.append(dados_jogo)
 
-    print(estrutura_final_jogo)
+    print(random.choice(estrutura_final_jogo))
     return lista_cobertura_, dados_jogo
 
 def leia_int(valor_entrada):
