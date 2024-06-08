@@ -26,12 +26,12 @@ def construcao_do_jogo():
                         ['            5', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
                         ['            6', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '])
 
-    lista_emoj_signos = ['🐶', '🪁', '😈', '🧠', '💩',
+    lista_emoj_signos = numpy.array(['🐶', '🪁', '😈', '🧠', '💩',
                          '🤚', '👗', '🐬', '🐊', '🦉',
                          '🐧', '🌲', '🍕', '🍩', '🏠',
                          '🪐', '🌠', '🏐', '🎵', '🎼',
-                         '💣', '🩸', '🧿', '☎', '🎤']
-
+                         '💣', '🩸', '🧿', '☎', '🎤'])
+    print(lista_emoj_signos)
     random.shuffle(lista_emoj_signos)
     for i in range(0, 15):
         sorteio_emoj.append(lista_emoj_signos[i])
@@ -42,7 +42,7 @@ def construcao_do_jogo():
     random.shuffle(dados_jogo)
     print(dados_jogo)
 
-    estrutura_final_jogo = numpy.array([dados_jogo])
+    estrutura_final_jogo = numpy.array(dados_jogo)
     print(estrutura_final_jogo)
 
     return lista_cobertura_, dados_jogo
