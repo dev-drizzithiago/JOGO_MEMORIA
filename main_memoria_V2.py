@@ -41,12 +41,10 @@ def construcao_do_jogo():
         dados_jogo.append(selecao_emoj)
     random.shuffle(dados_jogo)
     estrutura_final_jogo = numpy.array(dados_jogo)
-    estrutura_final_jogo = estrutura_final_jogo.reshape(6,5)
+    estrutura_final_jogo = estrutura_final_jogo.reshape(6, 5)
     print(dados_jogo)
 
-    print(estrutura_final_jogo)
-
-    return lista_cobertura_, dados_jogo
+    return lista_cobertura_, estrutura_final_jogo
 
 
 def leia_int(valor_entrada):
@@ -65,6 +63,8 @@ def leia_int(valor_entrada):
 def iniciando_jogo():
     posicao_escolha = 1
     valor_inicio, dados_sorteio = construcao_do_jogo()
+
+    print(dados_sorteio)
     while True:
         # print(dados_sorteio)
         print(linha_aparencia)
