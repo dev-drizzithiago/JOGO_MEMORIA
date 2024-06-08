@@ -27,11 +27,11 @@ def construcao_do_jogo():
                         ['            6', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '])
 
     lista_emoj_signos = numpy.array(['🐶', '🪁', '😈', '🧠', '💩',
-                         '🤚', '👗', '🐬', '🐊', '🦉',
-                         '🐧', '🌲', '🍕', '🍩', '🏠',
-                         '🪐', '🌠', '🏐', '🎵', '🎼',
-                         '💣', '🩸', '🧿', '☎', '🎤'])
-    print(lista_emoj_signos)
+                                     '🤚', '👗', '🐬', '🐊', '🦉',
+                                     '🐧', '🌲', '🍕', '🍩', '🏠',
+                                     '🪐', '🌠', '🏐', '🎵', '🎼',
+                                     '💣', '🩸', '🧿', '☎', '🎤'])
+
     random.shuffle(lista_emoj_signos)
     for i in range(0, 15):
         sorteio_emoj.append(lista_emoj_signos[i])
@@ -40,12 +40,15 @@ def construcao_do_jogo():
         dados_jogo.append(selecao_emoj)
         dados_jogo.append(selecao_emoj)
     random.shuffle(dados_jogo)
+    estrutura_final_jogo = numpy.array(dados_jogo)
+    estrutura_final_jogo = estrutura_final_jogo.reshape(6,5)
     print(dados_jogo)
 
-    estrutura_final_jogo = numpy.array(dados_jogo)
     print(estrutura_final_jogo)
 
     return lista_cobertura_, dados_jogo
+
+
 def leia_int(valor_entrada):
     """
     :param valor_entrada: Entra do valor da opção em menus
