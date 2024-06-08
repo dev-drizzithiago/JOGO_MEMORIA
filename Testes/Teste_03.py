@@ -15,4 +15,14 @@ lista_emoj_signos = ['🐶', '🪁', '😈', '🧠', '💩',
                      '💣', '🩸', '🧿', '☎', '🎤']
 
 
-print(random.shuffle(lista_emoj_signos))
+random.shuffle(lista_emoj_signos)
+print(lista_emoj_signos)
+
+random.shuffle(lista_emoj_signos)
+print(lista_emoj_signos)
+
+random.shuffle(lista_emoj_signos)
+print(lista_emoj_signos)
+
+random.shuffle(lista_emoj_signos)
+print(lista_emoj_signos)
