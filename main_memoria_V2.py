@@ -6,7 +6,7 @@ import numpy
 sorteio_emoj = list()
 dados_jogo = list()
 inicio_jogo = list()
-estrutura_final_jogo = list()
+# estrutura_final_jogo = list()
 
 linha_aparencia = '--==--' * 15
 
@@ -37,11 +37,13 @@ def construcao_do_jogo():
         sorteio_emoj.append(lista_emoj_signos[i])
 
     for selecao_emoj in sorteio_emoj:
-        if not selecao_emoj in dados_jogo:
-            dados_jogo.append(selecao_emoj)
-            dados_jogo.append(selecao_emoj)
-
+        dados_jogo.append(selecao_emoj)
+        dados_jogo.append(selecao_emoj)
+    random.shuffle(dados_jogo)
     print(dados_jogo)
+
+    estrutura_final_jogo = numpy.array(dados_jogo)
+    print(estrutura_final_jogo)
 
     return lista_cobertura_, dados_jogo
 def leia_int(valor_entrada):
