@@ -75,8 +75,8 @@ def iniciando_jogo():
 
         print()
         print(linha_aparencia)
-        opc_posicao = input(f"Escolha a {posicao_escolha}º posição: ")
-
+        opc_posicao_1 = input(f"Escolha a {posicao_escolha}º posição: ")
+        opc_posicao_2 = input(f"Escolha a {posicao_escolha}º posição: ")
 
 while True:
 
