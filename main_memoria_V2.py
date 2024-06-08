@@ -78,6 +78,19 @@ def iniciando_jogo():
         opc_posicao_1 = input(f"Escolha a {posicao_escolha}º posição: ")
         opc_posicao_2 = input(f"Escolha a {posicao_escolha}º posição: ")
 
+        if opc_posicao_1 == "A":
+            pass
+        if opc_posicao_1 == "A":
+            pass
+        if opc_posicao_1 == "A":
+            pass
+        if opc_posicao_1 == "A":
+            pass
+        if opc_posicao_1 == "A":
+            pass
+        if opc_posicao_1 == "A":
+            pass
+
 while True:
 
     print(f'\n{linha_aparencia}')
