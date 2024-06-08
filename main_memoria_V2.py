@@ -42,7 +42,7 @@ def construcao_do_jogo():
     random.shuffle(dados_jogo)
     print(dados_jogo)
 
-    estrutura_final_jogo = numpy.array(dados_jogo)
+    estrutura_final_jogo = numpy.array([dados_jogo])
     print(estrutura_final_jogo)
 
     return lista_cobertura_, dados_jogo
