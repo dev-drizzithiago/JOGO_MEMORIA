@@ -26,27 +26,18 @@ def construcao_do_jogo():
                         ['            5', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
                         ['            6', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '])
 
-    lista_emoj_signos = numpy.array(['🐶', '🪁', '😈', '🧠', '💩',
-                                     '🤚', '👗', '🐬', '🐊', '🦉',
-                                     '🐧', '🌲', '🍕', '🍩', '🏠',
-                                     '🪐', '🌠', '🏐', '🎵', '🎼',
-                                     '💣', '🩸', '🧿', '☎', '🎤'])
+    lista_emoj_signos = ['🐶', '🪁', '😈', '🧠', '💩',
+                         '🤚', '👗', '🐬', '🐊', '🦉',
+                         '🐧', '🌲', '🍕', '🍩', '🏠',
+                         '🪐', '🌠', '🏐', '🎵', '🎼',
+                         '💣', '🩸', '🧿', '☎', '🎤']
 
-    for contador in range(21):
-        sorteio_emoj.append(random.choice(lista_emoj_signos))
+    random.shuffle(lista_emoj_signos)
 
     for selecao_emoj in sorteio_emoj:
         if not selecao_emoj in dados_jogo:
             dados_jogo.append(selecao_emoj)
             dados_jogo.append(selecao_emoj)
-    for contator in range(21):
-        if not dados_jogo in estrutura_final_jogo:
-            estrutura_final_jogo.append(random.choice(dados_jogo))
-    print(dados_jogo)
-    random.shuffle(dados_jogo)
-    print(dados_jogo)
-    print(estrutura_final_jogo)
-    return lista_cobertura_, dados_jogo
 
 
 def leia_int(valor_entrada):
