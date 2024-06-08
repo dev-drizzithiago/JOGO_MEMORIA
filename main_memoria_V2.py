@@ -42,7 +42,9 @@ def construcao_do_jogo():
     for contator in range(21):
         if not dados_jogo in estrutura_final_jogo:
             estrutura_final_jogo.append(random.choice(dados_jogo))
-    print(random.shuffle(dados_jogo))
+    print(dados_jogo)
+    random.shuffle(dados_jogo)
+    print(dados_jogo)
     print(estrutura_final_jogo)
     return lista_cobertura_, dados_jogo
 
