@@ -33,13 +33,17 @@ def construcao_do_jogo():
                          '💣', '🩸', '🧿', '☎', '🎤']
 
     random.shuffle(lista_emoj_signos)
+    for i in range(0, 15):
+        sorteio_emoj.append(lista_emoj_signos[i])
 
     for selecao_emoj in sorteio_emoj:
         if not selecao_emoj in dados_jogo:
             dados_jogo.append(selecao_emoj)
             dados_jogo.append(selecao_emoj)
 
+    print(dados_jogo)
 
+    return lista_cobertura_, dados_jogo
 def leia_int(valor_entrada):
     """
     :param valor_entrada: Entra do valor da opção em menus
