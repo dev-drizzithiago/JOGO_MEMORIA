@@ -198,6 +198,10 @@ def iniciando_jogo():
         else:
             primera_escolha -= 1
 
+        if sorteio_emoj[linha_a][coluna_a] == sorteio_emoj[linha_b][coluna_b]:
+            print('verdadeiro')
+        else:
+            print('Falso')
 
 while True:
 
