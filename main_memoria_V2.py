@@ -89,7 +89,6 @@ def iniciando_jogo():
 
         if primera_escolha == 1:
             while True:
-                print(f'Primeira opção: {primera_escolha}')
                 print()
                 print(linha_aparencia)
                 opc_posicao_1 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
@@ -102,48 +101,47 @@ def iniciando_jogo():
 
         elif primera_escolha == 2:
             while True:
-                print(f'Segunda opção: {primera_escolha}')
                 print()
                 print(linha_aparencia)
                 opc_posicao_2 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
-                if int(opc_posicao_2[1]) > 6:
+                if int(opc_posicao_2[1]) > 7:
                     print('Opção inccorreta1')
                 else:
                     break
 
         if primera_escolha == 1:
-            if opc_posicao_1[0] == "A":
-                linha_a = int(opc_posicao_1[1])
-                coluna_a = 1
+            if opc_posicao_1[0] == "A":  # Letras são considerados COLUNAS
+                linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
+                coluna_a = 1  # As letras são modificados por números reais
                 estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
 
-            elif opc_posicao_1[0] == "B":
-                linha_a = int(opc_posicao_1[1])
-                coluna_a = 2
+            elif opc_posicao_1[0] == "B":  # Letras são considerados COLUNAS
+                linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
+                coluna_a = 2  # As letras são modificados por números reais
                 estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
 
-            elif opc_posicao_1[0] == "C":
-                linha_a = int(opc_posicao_1[1])
-                coluna_a = 3
+            elif opc_posicao_1[0] == "C":  # Letras são considerados COLUNAS
+                linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
+                coluna_a = 3  # As letras são modificados por números reais
                 estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
 
-            elif opc_posicao_1[0] == "D":
-                linha_a = int(opc_posicao_1[1])
-                coluna_a = 4
+            elif opc_posicao_1[0] == "D":  # Letras são considerados COLUNAS
+                linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
+                coluna_a = 4  # As letras são modificados por números reais
                 estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
 
-            elif opc_posicao_1[0] == "E":
-                linha_a = int(opc_posicao_1[1])
-                coluna_a = 5
+            elif opc_posicao_1[0] == "E":  # Letras são considerados COLUNAS
+                linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
+                coluna_a = 5  # As letras são modificados por números reais
                 estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
 
             elif opc_posicao_1 == '999':
                 resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
                 if resp[0] == 'S':
-                    del estrutura[:]
-                    del sorteio_emoj[:]
+                    del estrutura[:]  # As listas são limpas quando sair do jogo
+                    del sorteio_emoj[:]  # As listas são limpas quando sair do jogo
                     print('Saindo do jogo!')
-                    break
+                    break  # Quebra o loop
                 else:
                     print('Voltando ao jogo!')
             else:
