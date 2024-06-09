@@ -91,17 +91,17 @@ def iniciando_jogo():
             opc_posicao_2 = input(f"Escolha a {posicao_escolha}º posição(voltar=999): ")
             posicao_escolha -= 1
 
-        if opc_posicao_1 == "A":
+        if opc_posicao_1[0] == "A":
             pass
-        elif opc_posicao_1 == "B":
+        elif opc_posicao_1[0] == "B":
             pass
-        elif opc_posicao_1 == "C":
+        elif opc_posicao_1[0] == "C":
             pass
-        elif opc_posicao_1 == "D":
+        elif opc_posicao_1[0] == "D":
             pass
-        elif opc_posicao_1 == "E":
+        elif opc_posicao_1[0] == "E":
             pass
-        elif opc_posicao_1 or opc_posicao_2 == '999':
+        elif opc_posicao_1 == '999':
             resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
             if resp[0] == 'S':
                 del valor_inicio[:]
