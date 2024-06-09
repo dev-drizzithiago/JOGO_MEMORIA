@@ -75,6 +75,7 @@ def iniciando_jogo():
     estrutura, dados_sorteio = construcao_do_jogo()
 
     while True:
+        primera_escolha = 1
         linha_a = 0
         coluna_a = 0
         linha_b = 0
@@ -91,12 +92,13 @@ def iniciando_jogo():
             print(linha_aparencia)
             opc_posicao_1 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
             primera_escolha += 1
-        else:
+
+        elif primera_escolha == 2:
             print()
             print(linha_aparencia)
             opc_posicao_2 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
 
-        print(opc_posicao_1)
+        print(primera_escolha)
 
         if primera_escolha == 1:
             if opc_posicao_1[0] == "A":
@@ -132,8 +134,8 @@ def iniciando_jogo():
                     print('Voltando ao jogo!')
             else:
                 print('Essa opção não existe')
-                
-        else:
+
+        elif primera_escolha == 2:
             if opc_posicao_2[0] == "A":
                 linha_b = 1
                 coluna_b = opc_posicao_2[1]
@@ -166,8 +168,6 @@ def iniciando_jogo():
                     print('Voltando ao jogo!')
             else:
                 print('Essa opção não existe')
-
-
 
 while True:
 
