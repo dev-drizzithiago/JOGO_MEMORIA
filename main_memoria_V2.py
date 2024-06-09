@@ -136,7 +136,8 @@ def iniciando_jogo():
                     print('Voltando ao jogo!')
             else:
                 print('Essa opção não existe')
-
+            primera_escolha += 1
+            
         elif primera_escolha == 2:
             if opc_posicao_2[0] == "A":
                 linha_b = 1
@@ -174,8 +175,6 @@ def iniciando_jogo():
                     print('Voltando ao jogo!')
             else:
                 print('Essa opção não existe')
-        primera_escolha += 1
-
 
 while True:
 
