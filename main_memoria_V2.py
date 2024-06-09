@@ -79,7 +79,7 @@ def iniciando_jogo():
         coluna_a = 0
         linha_b = 0
         coluna_b = 0
-        print(f'posição escolha: {primera_escolha}')
+        
         print(linha_aparencia)
         for linha in estrutura:
             print()
@@ -137,7 +137,6 @@ def iniciando_jogo():
                     print('Voltando ao jogo!')
             else:
                 print('Essa opção não existe')
-            primera_escolha += 1
 
         elif primera_escolha == 2:
             if opc_posicao_2[0] == "A":
