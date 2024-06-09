@@ -101,29 +101,29 @@ def iniciando_jogo():
 
         if primera_escolha == 1:
             if opc_posicao_1[0] == "A":
-                linha_a = 1
-                coluna_a = int(opc_posicao_1[1])
+                linha_a = int(opc_posicao_1[1])
+                coluna_a = 2
 
                 estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][linha_a]
 
             elif opc_posicao_1[0] == "B":
-                linha_a = 2
-                coluna_a = opc_posicao_1[1]
+                linha_a = int(opc_posicao_1[1])
+                coluna_a = 2
                 print(linha_a, coluna_a)
 
             elif opc_posicao_1[0] == "C":
-                linha_a = 3
-                coluna_a = opc_posicao_1[1]
+                linha_a = int(opc_posicao_1[1])
+                coluna_a = 3
                 print(linha_a, coluna_a)
 
             elif opc_posicao_1[0] == "D":
-                linha_a = 4
-                coluna_a = opc_posicao_1[1]
+                linha_a = int(opc_posicao_1[1])
+                coluna_a = 4
                 print(linha_a, coluna_a)
 
             elif opc_posicao_1[0] == "E":
-                linha_a = 5
-                coluna_a = opc_posicao_1[1]
+                linha_a = int(opc_posicao_1[1])
+                coluna_a = 5
                 print(linha_a, coluna_a)
 
             elif opc_posicao_1 == '999':
