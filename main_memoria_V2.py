@@ -100,25 +100,25 @@ def iniciando_jogo():
 
         if opc_posicao_1[0] == "A":
             linha_a = 1
-            coluna_b = opc_posicao_1[1]
+            coluna_a = opc_posicao_1[1]
 
-            print(linha, coluna)
+            print(linha_a, coluna_a)
 
         elif opc_posicao_1[0] == "B":
             linha_a = 2
-            coluna_b = opc_posicao_1[1]
+            coluna_a = opc_posicao_1[1]
 
         elif opc_posicao_1[0] == "C":
             linha_a = 3
-            coluna_b = opc_posicao_1[1]
+            coluna_a = opc_posicao_1[1]
 
         elif opc_posicao_1[0] == "D":
             linha_a = 4
-            coluna_b = opc_posicao_1[1]
+            coluna_a = opc_posicao_1[1]
 
         elif opc_posicao_1[0] == "E":
-            linha = 5
-            coluna = opc_posicao_1[1]
+            linha_a = 5
+            coluna_a = opc_posicao_1[1]
 
         elif opc_posicao_1 == '999':
             resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
