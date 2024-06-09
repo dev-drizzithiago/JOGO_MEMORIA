@@ -66,28 +66,36 @@ def iniciando_jogo():
 
     print(dados_sorteio)
     while True:
-        # print(dados_sorteio)
+
         print(linha_aparencia)
         for linha in valor_inicio:
             print()
             for coluna in linha:
                 print(coluna, end=' ')
 
-        print()
-        print(linha_aparencia)
-        opc_posicao_1 = input(f"Escolha a {posicao_escolha}º posição: ")
-        opc_posicao_2 = input(f"Escolha a {posicao_escolha}º posição: ")
+        if posicao_escolha == 1:
+            print()
+            print(linha_aparencia)
+            opc_posicao_1 = input(f"Escolha a {posicao_escolha}º posição(voltar=999): ")
+        elif posicao_escolha == 2:
+            print()
+            print(linha_aparencia)
+            opc_posicao_2 = input(f"Escolha a {posicao_escolha}º posição(voltar=999): ")
 
         if opc_posicao_1 == "A":
             pass
-        if opc_posicao_1 == "B":
+        elif opc_posicao_1 == "B":
             pass
-        if opc_posicao_1 == "C":
+        elif opc_posicao_1 == "C":
             pass
-        if opc_posicao_1 == "D":
+        elif opc_posicao_1 == "D":
             pass
-        if opc_posicao_1 == "E":
+        elif opc_posicao_1 == "E":
             pass
+        elif opc_posicao_1 or opc_posicao_2 == '999':
+            break
+        else:
+            print('Essa opção não existe')
 
 while True:
 
