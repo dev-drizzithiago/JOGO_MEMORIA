@@ -75,6 +75,8 @@ def iniciando_jogo():
     estrutura, dados_sorteio = construcao_do_jogo()
 
     while True:
+        linha = 0
+        coluna = 0
         print(linha_aparencia)
         for linha in estrutura:
             print()
@@ -92,9 +94,13 @@ def iniciando_jogo():
             opc_posicao_2 = input(f"Escolha a {posicao_escolha}º posição(voltar=999): ")
             posicao_escolha -= 1
 
+        print(opc_posicao_1)
+        print(opc_posicao_2)
+        
         if opc_posicao_1[0] == "A":
-            opc_posicao_1 = int(1)
-            estrutura = int (opc_posicao_1 + opc_posicao_1[1])
+            linha = 1
+            coluna = opc_posicao_1[1]
+            print(linha, coluna)
         elif opc_posicao_1[0] == "B":
             pass
         elif opc_posicao_1[0] == "C":
@@ -106,7 +112,7 @@ def iniciando_jogo():
         elif opc_posicao_1 == '999':
             resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
             if resp[0] == 'S':
-                del valor_inicio[:]
+                del estrutura[:]
                 del sorteio_emoj[:]
                 print('Saindo do jogo!')
                 break
