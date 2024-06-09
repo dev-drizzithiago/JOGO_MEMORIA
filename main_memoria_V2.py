@@ -80,15 +80,13 @@ def iniciando_jogo():
 
         if opc_posicao_1 == "A":
             pass
-        if opc_posicao_1 == "A":
+        if opc_posicao_1 == "B":
             pass
-        if opc_posicao_1 == "A":
+        if opc_posicao_1 == "C":
             pass
-        if opc_posicao_1 == "A":
+        if opc_posicao_1 == "D":
             pass
-        if opc_posicao_1 == "A":
-            pass
-        if opc_posicao_1 == "A":
+        if opc_posicao_1 == "E":
             pass
 
 while True:
