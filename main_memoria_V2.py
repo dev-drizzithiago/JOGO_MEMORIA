@@ -71,7 +71,7 @@ def leia_int(valor_entrada):
 
 def iniciando_jogo():
     matriz_jogo = int
-    posicao_escolha = 1
+    primera_escolha = 1
     estrutura, dados_sorteio = construcao_do_jogo()
 
     while True:
@@ -79,91 +79,93 @@ def iniciando_jogo():
         coluna_a = 0
         linha_b = 0
         coluna_b = 0
+
         print(linha_aparencia)
         for linha in estrutura:
             print()
             for coluna in linha:
                 print(coluna, end=' ')
 
-        if posicao_escolha == 1:
+        if primera_escolha == 1:
             print()
             print(linha_aparencia)
-            opc_posicao_1 = input(f"Escolha a {posicao_escolha}º posição(voltar=999): ").upper()
-            posicao_escolha += 1
+            opc_posicao_1 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
+            primera_escolha += 1
         else:
             print()
             print(linha_aparencia)
-            opc_posicao_2 = input(f"Escolha a {posicao_escolha}º posição(voltar=999): ")
-            posicao_escolha -= 1
+            opc_posicao_2 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
 
         print(opc_posicao_1)
 
-        if opc_posicao_1[0] == "A":
-            linha_a = 1
-            coluna_a = opc_posicao_1[1]
+        if primera_escolha == 1:
+            if opc_posicao_1[0] == "A":
+                linha_a = 1
+                coluna_a = opc_posicao_1[1]
 
-            print(linha_a, coluna_a)
+                print(linha_a, coluna_a)
 
-        elif opc_posicao_1[0] == "B":
-            linha_a = 2
-            coluna_a = opc_posicao_1[1]
+            elif opc_posicao_1[0] == "B":
+                linha_a = 2
+                coluna_a = opc_posicao_1[1]
 
-        elif opc_posicao_1[0] == "C":
-            linha_a = 3
-            coluna_a = opc_posicao_1[1]
+            elif opc_posicao_1[0] == "C":
+                linha_a = 3
+                coluna_a = opc_posicao_1[1]
 
-        elif opc_posicao_1[0] == "D":
-            linha_a = 4
-            coluna_a = opc_posicao_1[1]
+            elif opc_posicao_1[0] == "D":
+                linha_a = 4
+                coluna_a = opc_posicao_1[1]
 
-        elif opc_posicao_1[0] == "E":
-            linha_a = 5
-            coluna_a = opc_posicao_1[1]
+            elif opc_posicao_1[0] == "E":
+                linha_a = 5
+                coluna_a = opc_posicao_1[1]
 
-        elif opc_posicao_1 == '999':
-            resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
-            if resp[0] == 'S':
-                del estrutura[:]
-                del sorteio_emoj[:]
-                print('Saindo do jogo!')
-                break
+            elif opc_posicao_1 == '999':
+                resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
+                if resp[0] == 'S':
+                    del estrutura[:]
+                    del sorteio_emoj[:]
+                    print('Saindo do jogo!')
+                    break
+                else:
+                    print('Voltando ao jogo!')
             else:
-                print('Voltando ao jogo!')
+                print('Essa opção não existe')
+                
         else:
-            print('Essa opção não existe')
+            if opc_posicao_2[0] == "A":
+                linha_b = 1
+                coluna_b = opc_posicao_2[1]
+                print(linha_b, coluna_b)
 
-        if opc_posicao_2[0] == "A":
-            linha_b = 1
-            coluna_b = opc_posicao_2[1]
-            print(linha_b, coluna_b)
+            elif opc_posicao_2[0] == "B":
+                linha_b = 2
+                coluna_b = opc_posicao_2[1]
 
-        elif opc_posicao_2[0] == "B":
-            linha_b = 2
-            coluna_b = opc_posicao_2[1]
+            elif opc_posicao_2[0] == "C":
+                linha_b = 3
+                coluna_b = opc_posicao_2[1]
 
-        elif opc_posicao_2[0] == "C":
-            linha_b = 3
-            coluna_b = opc_posicao_2[1]
+            elif opc_posicao_2[0] == "D":
+                linha_b = 4
+                coluna_b = opc_posicao_2[1]
 
-        elif opc_posicao_2[0] == "D":
-            linha_b = 4
-            coluna_b = opc_posicao_2[1]
+            elif opc_posicao_2[0] == "E":
+                linha_b = 5
+                coluna_b = opc_posicao_2[1]
 
-        elif opc_posicao_2[0] == "E":
-            linha_b = 5
-            coluna_b = opc_posicao_2[1]
-
-        elif opc_posicao_1 == '999':
-            resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
-            if resp[0] == 'S':
-                del estrutura[:]
-                del sorteio_emoj[:]
-                print('Saindo do jogo!')
-                break
+            elif opc_posicao_1 == '999':
+                resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
+                if resp[0] == 'S':
+                    del estrutura[:]
+                    del sorteio_emoj[:]
+                    print('Saindo do jogo!')
+                    break
+                else:
+                    print('Voltando ao jogo!')
             else:
-                print('Voltando ao jogo!')
-        else:
-            print('Essa opção não existe')
+                print('Essa opção não existe')
 
 
 
