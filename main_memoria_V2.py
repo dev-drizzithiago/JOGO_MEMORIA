@@ -70,6 +70,7 @@ def leia_int(valor_entrada):
 
 
 def iniciando_jogo():
+    matriz_jogo = int
     posicao_escolha = 1
     valor_inicio, dados_sorteio = construcao_do_jogo()
 
@@ -92,7 +93,7 @@ def iniciando_jogo():
             posicao_escolha -= 1
 
         if opc_posicao_1[0] == "A":
-            pass
+
         elif opc_posicao_1[0] == "B":
             pass
         elif opc_posicao_1[0] == "C":
