@@ -79,7 +79,6 @@ def iniciando_jogo():
         coluna_a = 0
         linha_b = 0
         coluna_b = 0
-        print(f'Primeira opção: {primera_escolha}')
 
         print(linha_aparencia)
         for linha in estrutura:
@@ -97,16 +96,21 @@ def iniciando_jogo():
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
                 elif len(opc_posicao_1[0]) < 1 and int(opc_posicao_1[1]) > 6:
                     print('Opção inccorreta1')
+                elif int(opc_posicao_1[0]) >= 0:
+                    print('Escolha primeiro uma coluna (Letras)')
+                elif int(opc_posicao_1[1]) < 0:
+                    print('Escolha primeiro uma coluna (Letras)')
                 else:
                     break
         #  A segunda opção vai ser escolhida
-
         elif primera_escolha == 2:
             while True:
                 print()
                 print(linha_aparencia)
                 opc_posicao_2 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
-                if int(opc_posicao_2[1]) > 7:
+                if len(opc_posicao_1) == 0:
+                    print('Escolha uma coluna (Letras) e uma linha (Números)')
+                elif len(opc_posicao_2[0]) < 1 and int(opc_posicao_2[1]) > 6:
                     print('Opção inccorreta1')
                 else:
                     break
@@ -146,8 +150,6 @@ def iniciando_jogo():
                     break  # Quebra o loop
                 else:
                     print('Voltando ao jogo!')
-            else:
-                print('Essa opção não existe')
 
         elif primera_escolha == 2:
 
