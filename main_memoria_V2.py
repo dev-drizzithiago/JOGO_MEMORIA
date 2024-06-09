@@ -99,10 +99,6 @@ def iniciando_jogo():
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
                 elif len(opc_posicao_1[0]) < 1 and int(opc_posicao_1[1]) > 6:
                     print('Opção inccorreta1')
-                elif int(opc_posicao_1[0]):
-                    print('Escolha primeiro uma coluna (Letras)')
-                elif int(opc_posicao_1[1]) < 0:
-                    print('Escolha primeiro uma coluna (Letras)')
                 else:
                     break
         #  A segunda opção vai ser escolhida
@@ -153,6 +149,8 @@ def iniciando_jogo():
                     break  # Quebra o loop
                 else:
                     print('Voltando ao jogo!')
+            else:
+                print('Opção não existe!')
 
         elif primera_escolha == 2:
 
