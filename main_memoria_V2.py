@@ -72,11 +72,11 @@ def leia_int(valor_entrada):
 def iniciando_jogo():
     matriz_jogo = int
     posicao_escolha = 1
-    valor_inicio, dados_sorteio = construcao_do_jogo()
+    estrutura, dados_sorteio = construcao_do_jogo()
 
     while True:
         print(linha_aparencia)
-        for linha in valor_inicio:
+        for linha in estrutura:
             print()
             for coluna in linha:
                 print(coluna, end=' ')
@@ -93,7 +93,8 @@ def iniciando_jogo():
             posicao_escolha -= 1
 
         if opc_posicao_1[0] == "A":
-
+            opc_posicao_1 = int(1)
+            estrutura = int (opc_posicao_1 + opc_posicao_1[1])
         elif opc_posicao_1[0] == "B":
             pass
         elif opc_posicao_1[0] == "C":
