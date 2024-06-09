@@ -71,6 +71,8 @@ def leia_int(valor_entrada):
 
 def iniciando_jogo():
     primera_escolha = 1
+    resposta_1 = ''
+    resposta_2 = ''
     matriz_jogo = int
     estrutura, dados_sorteio = construcao_do_jogo()
     print(dados_sorteio)
@@ -79,9 +81,6 @@ def iniciando_jogo():
         coluna_a = 0
         linha_b = 0
         coluna_b = 0
-
-        letra_vazia = False
-        numero_vazio = False
 
         print(linha_aparencia)
         for linha in estrutura:
