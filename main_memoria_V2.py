@@ -70,10 +70,10 @@ def leia_int(valor_entrada):
 
 
 def iniciando_jogo():
+    posicao_escolha = 1
     valor_inicio, dados_sorteio = construcao_do_jogo()
 
     while True:
-        posicao_escolha = 1
         print(linha_aparencia)
         for linha in valor_inicio:
             print()
@@ -85,11 +85,11 @@ def iniciando_jogo():
             print(linha_aparencia)
             opc_posicao_1 = input(f"Escolha a {posicao_escolha}º posição(voltar=999): ").upper()
             posicao_escolha += 1
-        elif posicao_escolha == 2:
+        else:
             print()
             print(linha_aparencia)
             opc_posicao_2 = input(f"Escolha a {posicao_escolha}º posição(voltar=999): ")
-            posicao_escolha += 1
+            posicao_escolha -= 1
 
         if opc_posicao_1 == "A":
             pass
@@ -103,7 +103,7 @@ def iniciando_jogo():
             pass
         elif opc_posicao_1 or opc_posicao_2 == '999':
             resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
-            if resp in 'SIM':
+            if resp[0] == 'S':
                 del valor_inicio[:]
                 del sorteio_emoj[:]
                 print('Saindo do jogo!')
