@@ -95,20 +95,62 @@ def iniciando_jogo():
             posicao_escolha -= 1
 
         print(opc_posicao_1)
-        print(opc_posicao_2)
-        
+
         if opc_posicao_1[0] == "A":
             linha = 1
             coluna = opc_posicao_1[1]
+
             print(linha, coluna)
+
         elif opc_posicao_1[0] == "B":
-            pass
+            linha = 2
+            coluna = opc_posicao_1[1]
+
         elif opc_posicao_1[0] == "C":
-            pass
+            linha = 3
+            coluna = opc_posicao_1[1]
+
         elif opc_posicao_1[0] == "D":
-            pass
+            linha = 4
+            coluna = opc_posicao_1[1]
+
         elif opc_posicao_1[0] == "E":
-            pass
+            linha = 5
+            coluna = opc_posicao_1[1]
+
+        elif opc_posicao_1 == '999':
+            resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
+            if resp[0] == 'S':
+                del estrutura[:]
+                del sorteio_emoj[:]
+                print('Saindo do jogo!')
+                break
+            else:
+                print('Voltando ao jogo!')
+        else:
+            print('Essa opção não existe')
+
+        if opc_posicao_2[0] == "A":
+            linha = 1
+            coluna = opc_posicao_2[1]
+            print(linha, coluna)
+
+        elif opc_posicao_2[0] == "B":
+            linha = 2
+            coluna = opc_posicao_2[1]
+
+        elif opc_posicao_2[0] == "C":
+            linha = 3
+            coluna = opc_posicao_2[1]
+
+        elif opc_posicao_2[0] == "D":
+            linha = 4
+            coluna = opc_posicao_2[1]
+
+        elif opc_posicao_2[0] == "E":
+            linha = 5
+            coluna = opc_posicao_2[1]
+
         elif opc_posicao_1 == '999':
             resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
             if resp[0] == 'S':
