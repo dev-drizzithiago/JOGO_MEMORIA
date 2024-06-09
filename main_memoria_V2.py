@@ -159,28 +159,28 @@ def iniciando_jogo():
             if opc_posicao_2[0] == "A":
                 linha_b = int(opc_posicao_2[1])
                 coluna_b = 1
-                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
+                estrutura[linha_b][coluna_b] = dados_sorteio[linha_b][coluna_b]
 
             elif opc_posicao_2[0] == "B":
                 linha_b = int(opc_posicao_2[1])
                 coluna_b = 2
-                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
+                estrutura[linha_b][coluna_b] = dados_sorteio[linha_b][coluna_b]
 
             elif opc_posicao_2[0] == "C":
                 linha_b = int(opc_posicao_2[1])
                 coluna_b = 3
-                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
+                estrutura[linha_b][coluna_b] = dados_sorteio[linha_b][coluna_b]
 
             elif opc_posicao_2[0] == "D":
                 linha_b = int(opc_posicao_2[1])
                 coluna_b = 4
-                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
+                estrutura[linha_b][coluna_b] = dados_sorteio[linha_b][coluna_b]
 
             elif opc_posicao_2[0] == "E":
                 linha_b = int(opc_posicao_2[1])
                 coluna_b = 5
-                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
-                
+                estrutura[linha_b][coluna_b] = dados_sorteio[linha_b][coluna_b]
+
             elif opc_posicao_1 == '999':
                 resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
                 if resp[0] == 'S':
