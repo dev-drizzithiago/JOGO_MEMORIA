@@ -79,7 +79,7 @@ def iniciando_jogo():
         coluna_a = 0
         linha_b = 0
         coluna_b = 0
-        
+
         print(linha_aparencia)
         for linha in estrutura:
             print()
@@ -97,7 +97,6 @@ def iniciando_jogo():
             print()
             print(linha_aparencia)
             opc_posicao_2 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
-            primera_escolha = 1
 
         if primera_escolha == 1:
             if opc_posicao_1[0] == "A":
@@ -139,6 +138,7 @@ def iniciando_jogo():
                 print('Essa opção não existe')
 
         elif primera_escolha == 2:
+            primera_escolha -= 1
             if opc_posicao_2[0] == "A":
                 linha_b = 1
                 coluna_b = opc_posicao_2[1]
@@ -175,6 +175,8 @@ def iniciando_jogo():
                     print('Voltando ao jogo!')
             else:
                 print('Essa opção não existe')
+
+
         primera_escolha += 1
 
 while True:
