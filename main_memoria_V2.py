@@ -27,11 +27,11 @@ def construcao_do_jogo():
                         ['            6', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ']]
 
     """### Possui os icones do jogo. Possui 30 itens ao todo"""
-    lista_emoj_signos = numpy.array(['🐶', '🪁', '😈', '🧠', '💩',
-                                     '🤚', '👗', '🐬', '🐊', '🦉',
-                                     '🐧', '🌲', '🍕', '🍩', '🏠',
-                                     '🪐', '🌠', '🏐', '🎵', '🎼',
-                                     '💣', '🩸', '🧿', '☎', '🎤'])
+    lista_emoj_signos = numpy.array([' 🐶 ', ' 🪁 ', ' 😈 ', ' 🧠 ', ' 💩 ',
+                                     ' 🤚 ', ' 👗 ', ' 🐬 ', ' 🐊 ', ' 🦉 ',
+                                     ' 🐧 ', ' 🌲 ', ' 🍕 ', ' 🍩 ', ' 🏠 ',
+                                     ' 🪐 ', ' 🌠 ', ' 🏐 ', ' 🎵 ', ' 🎼 ',
+                                     ' 💣 ', ' 🩸 ', ' 🧿 ', ' ☎ ', ' 🎤 '])
     """### Embaralha todos os icones para que sejam sorteados para o jogo"""
     random.shuffle(lista_emoj_signos)
 
@@ -102,9 +102,9 @@ def iniciando_jogo():
         if primera_escolha == 1:
             if opc_posicao_1[0] == "A":
                 linha_a = 1
-                coluna_a = opc_posicao_1[1]
+                coluna_a = int(opc_posicao_1[1])
 
-                print(linha_a, coluna_a)
+                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][linha_a]
 
             elif opc_posicao_1[0] == "B":
                 linha_a = 2
