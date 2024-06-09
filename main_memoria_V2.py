@@ -18,13 +18,13 @@ def construcao_do_jogo():
     """
 
     """### Essa estrutura sera responsável em apresentar ao usuário o mode de inicio"""
-    lista_cobertura_ = (['              ', ' A', '   B', '   C', '   D', '   E'],
+    lista_cobertura_ = [['              ', ' A', '   B', '   C', '   D', '   E'],
                         ['            1', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
                         ['            2', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
                         ['            3', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
                         ['            4', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
                         ['            5', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
-                        ['            6', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '])
+                        ['            6', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ']]
 
     """### Possui os icones do jogo. Possui 30 itens ao todo"""
     lista_emoj_signos = numpy.array(['🐶', '🪁', '😈', '🧠', '💩',
@@ -72,7 +72,6 @@ def iniciando_jogo():
     posicao_escolha = 1
     valor_inicio, dados_sorteio = construcao_do_jogo()
 
-    print(dados_sorteio)
     while True:
 
         print(linha_aparencia)
@@ -84,7 +83,7 @@ def iniciando_jogo():
         if posicao_escolha == 1:
             print()
             print(linha_aparencia)
-            opc_posicao_1 = input(f"Escolha a {posicao_escolha}º posição(voltar=999): ")
+            opc_posicao_1 = input(f"Escolha a {posicao_escolha}º posição(voltar=999): ").upper()
         elif posicao_escolha == 2:
             print()
             print(linha_aparencia)
@@ -101,9 +100,13 @@ def iniciando_jogo():
         elif opc_posicao_1 == "E":
             pass
         elif opc_posicao_1 or opc_posicao_2 == '999':
+            del valor_inicio[:]
+            del sorteio_emoj[:]
             break
         else:
             print('Essa opção não existe')
+
+        posicao_escolha += 1
 
 while True:
 
