@@ -176,6 +176,7 @@ def iniciando_jogo():
                     print('Voltando ao jogo!')
             else:
                 print('Essa opção não existe')
+
         if primera_escolha == 1:
             primera_escolha += 1
         else:
