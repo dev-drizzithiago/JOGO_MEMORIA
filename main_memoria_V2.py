@@ -156,29 +156,29 @@ def iniciando_jogo():
 
         elif primera_escolha == 2:
 
-            if opc_posicao_2[0] == "A":
+            if opc_posicao_2[0] == "A":  # Letras são considerados COLUNAS
                 linha_b = int(opc_posicao_2[1])
-                coluna_b = 1
+                coluna_b = 1  # As letras são modificados por números reais
                 estrutura[linha_b][coluna_b] = dados_sorteio[linha_b - 1][coluna_b - 1]
 
-            elif opc_posicao_2[0] == "B":
-                linha_b = int(opc_posicao_2[1])
-                coluna_b = 2
+            elif opc_posicao_2[0] == "B":  # Letras são considerados COLUNAS
+                linha_b = int(opc_posicao_2[1])  # Número chega como string sendo convertidas para inteiro
+                coluna_b = 2  # As letras são modificados por números reais
                 estrutura[linha_b][coluna_b] = dados_sorteio[linha_b - 1][coluna_b - 1]
 
-            elif opc_posicao_2[0] == "C":
-                linha_b = int(opc_posicao_2[1])
-                coluna_b = 3
+            elif opc_posicao_2[0] == "C":  # Letras são considerados COLUNAS
+                linha_b = int(opc_posicao_2[1])  # Número chega como string sendo convertidas para inteiro
+                coluna_b = 3  # As letras são modificados por números reais
                 estrutura[linha_b][coluna_b] = dados_sorteio[linha_b - 1][coluna_b - 1]
 
-            elif opc_posicao_2[0] == "D":
-                linha_b = int(opc_posicao_2[1])
-                coluna_b = 4
+            elif opc_posicao_2[0] == "D":  # Letras são considerados COLUNAS
+                linha_b = int(opc_posicao_2[1])  # Número chega como string sendo convertidas para inteiro
+                coluna_b = 4  # As letras são modificados por números reais
                 estrutura[linha_b][coluna_b] = dados_sorteio[linha_b - 1][coluna_b - 1]
 
-            elif opc_posicao_2[0] == "E":
-                linha_b = int(opc_posicao_2[1])
-                coluna_b = 5
+            elif opc_posicao_2[0] == "E":  # Letras são considerados COLUNAS
+                linha_b = int(opc_posicao_2[1])  # Número chega como string sendo convertidas para inteiro
+                coluna_b = 5  # As letras são modificados por números reais
                 estrutura[linha_b][coluna_b] = dados_sorteio[linha_b - 1][coluna_b - 1]
 
             elif opc_posicao_1 == '999':
