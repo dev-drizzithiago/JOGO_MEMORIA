@@ -71,7 +71,6 @@ def leia_int(valor_entrada):
 
 def iniciando_jogo():
     matriz_jogo = int
-    primera_escolha = 1
     estrutura, dados_sorteio = construcao_do_jogo()
 
     while True:
@@ -91,7 +90,6 @@ def iniciando_jogo():
             print()
             print(linha_aparencia)
             opc_posicao_1 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
-            primera_escolha += 1
 
         elif primera_escolha == 2:
             print()
@@ -110,18 +108,22 @@ def iniciando_jogo():
             elif opc_posicao_1[0] == "B":
                 linha_a = 2
                 coluna_a = opc_posicao_1[1]
+                print(linha_a, coluna_a)
 
             elif opc_posicao_1[0] == "C":
                 linha_a = 3
                 coluna_a = opc_posicao_1[1]
+                print(linha_a, coluna_a)
 
             elif opc_posicao_1[0] == "D":
                 linha_a = 4
                 coluna_a = opc_posicao_1[1]
+                print(linha_a, coluna_a)
 
             elif opc_posicao_1[0] == "E":
                 linha_a = 5
                 coluna_a = opc_posicao_1[1]
+                print(linha_a, coluna_a)
 
             elif opc_posicao_1 == '999':
                 resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
@@ -144,18 +146,22 @@ def iniciando_jogo():
             elif opc_posicao_2[0] == "B":
                 linha_b = 2
                 coluna_b = opc_posicao_2[1]
+                print(linha_b, coluna_b)
 
             elif opc_posicao_2[0] == "C":
                 linha_b = 3
                 coluna_b = opc_posicao_2[1]
+                print(linha_b, coluna_b)
 
             elif opc_posicao_2[0] == "D":
                 linha_b = 4
                 coluna_b = opc_posicao_2[1]
+                print(linha_b, coluna_b)
 
             elif opc_posicao_2[0] == "E":
                 linha_b = 5
                 coluna_b = opc_posicao_2[1]
+                print(linha_b, coluna_b)
 
             elif opc_posicao_1 == '999':
                 resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
@@ -168,6 +174,8 @@ def iniciando_jogo():
                     print('Voltando ao jogo!')
             else:
                 print('Essa opção não existe')
+        primera_escolha += 1
+
 
 while True:
 
