@@ -120,26 +120,31 @@ def iniciando_jogo():
                 linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_a = 1  # As letras são modificados por números reais
                 estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
+                resposta_1 = dados_sorteio[linha_a - 1][coluna_a - 1]
 
             elif opc_posicao_1[0] == "B":  # Letras são considerados COLUNAS
                 linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_a = 2  # As letras são modificados por números reais
                 estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
+                resposta_1 = dados_sorteio[linha_a - 1][coluna_a - 1]
 
             elif opc_posicao_1[0] == "C":  # Letras são considerados COLUNAS
                 linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_a = 3  # As letras são modificados por números reais
                 estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
+                resposta_1 = dados_sorteio[linha_a - 1][coluna_a - 1]
 
             elif opc_posicao_1[0] == "D":  # Letras são considerados COLUNAS
                 linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_a = 4  # As letras são modificados por números reais
                 estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
+                resposta_1 = dados_sorteio[linha_a - 1][coluna_a - 1]
 
             elif opc_posicao_1[0] == "E":  # Letras são considerados COLUNAS
                 linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_a = 5  # As letras são modificados por números reais
                 estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
+                resposta_1 = dados_sorteio[linha_a - 1][coluna_a - 1]
 
             elif opc_posicao_1 == '999':
                 resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
@@ -159,26 +164,31 @@ def iniciando_jogo():
                 linha_b = int(opc_posicao_2[1])
                 coluna_b = 1  # As letras são modificados por números reais
                 estrutura[linha_b][coluna_b] = dados_sorteio[linha_b - 1][coluna_b - 1]
+                resposta_2 = dados_sorteio[linha_b - 1][coluna_b - 1]
 
             elif opc_posicao_2[0] == "B":  # Letras são considerados COLUNAS
                 linha_b = int(opc_posicao_2[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_b = 2  # As letras são modificados por números reais
                 estrutura[linha_b][coluna_b] = dados_sorteio[linha_b - 1][coluna_b - 1]
+                resposta_2 = dados_sorteio[linha_b - 1][coluna_b - 1]
 
             elif opc_posicao_2[0] == "C":  # Letras são considerados COLUNAS
                 linha_b = int(opc_posicao_2[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_b = 3  # As letras são modificados por números reais
                 estrutura[linha_b][coluna_b] = dados_sorteio[linha_b - 1][coluna_b - 1]
+                resposta_2 = dados_sorteio[linha_b - 1][coluna_b - 1]
 
             elif opc_posicao_2[0] == "D":  # Letras são considerados COLUNAS
                 linha_b = int(opc_posicao_2[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_b = 4  # As letras são modificados por números reais
                 estrutura[linha_b][coluna_b] = dados_sorteio[linha_b - 1][coluna_b - 1]
+                resposta_2 = dados_sorteio[linha_b - 1][coluna_b - 1]
 
             elif opc_posicao_2[0] == "E":  # Letras são considerados COLUNAS
                 linha_b = int(opc_posicao_2[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_b = 5  # As letras são modificados por números reais
                 estrutura[linha_b][coluna_b] = dados_sorteio[linha_b - 1][coluna_b - 1]
+                resposta_2 = dados_sorteio[linha_b - 1][coluna_b - 1]
 
             elif opc_posicao_1 == '999':
                 resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
