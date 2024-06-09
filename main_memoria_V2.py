@@ -40,6 +40,7 @@ def construcao_do_jogo():
         sorteio_emoj.append(lista_emoj_signos[i])
 
     """### Pega os icones escolhidos e faz uma copia"""
+    del dados_jogo[:]
     for selecao_emoj in sorteio_emoj:
         dados_jogo.append(selecao_emoj)
         dados_jogo.append(selecao_emoj)
@@ -69,11 +70,10 @@ def leia_int(valor_entrada):
 
 
 def iniciando_jogo():
-    posicao_escolha = 1
     valor_inicio, dados_sorteio = construcao_do_jogo()
 
     while True:
-
+        posicao_escolha = 1
         print(linha_aparencia)
         for linha in valor_inicio:
             print()
@@ -84,10 +84,12 @@ def iniciando_jogo():
             print()
             print(linha_aparencia)
             opc_posicao_1 = input(f"Escolha a {posicao_escolha}º posição(voltar=999): ").upper()
+            posicao_escolha += 1
         elif posicao_escolha == 2:
             print()
             print(linha_aparencia)
             opc_posicao_2 = input(f"Escolha a {posicao_escolha}º posição(voltar=999): ")
+            posicao_escolha += 1
 
         if opc_posicao_1 == "A":
             pass
@@ -100,13 +102,18 @@ def iniciando_jogo():
         elif opc_posicao_1 == "E":
             pass
         elif opc_posicao_1 or opc_posicao_2 == '999':
-            del valor_inicio[:]
-            del sorteio_emoj[:]
-            break
+            resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
+            if resp in 'SIM':
+                del valor_inicio[:]
+                del sorteio_emoj[:]
+                print('Saindo do jogo!')
+                break
+            else:
+                print('Voltando ao jogo!')
         else:
             print('Essa opção não existe')
 
-        posicao_escolha += 1
+
 
 while True:
 
