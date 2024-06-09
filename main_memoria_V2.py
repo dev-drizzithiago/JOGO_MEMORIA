@@ -75,8 +75,10 @@ def iniciando_jogo():
     estrutura, dados_sorteio = construcao_do_jogo()
 
     while True:
-        linha = 0
-        coluna = 0
+        linha_a = 0
+        coluna_a = 0
+        linha_b = 0
+        coluna_b = 0
         print(linha_aparencia)
         for linha in estrutura:
             print()
@@ -131,25 +133,25 @@ def iniciando_jogo():
             print('Essa opção não existe')
 
         if opc_posicao_2[0] == "A":
-            linha = 1
-            coluna = opc_posicao_2[1]
+            linha_b= 1
+            coluna_b = opc_posicao_2[1]
             print(linha, coluna)
 
         elif opc_posicao_2[0] == "B":
-            linha = 2
-            coluna = opc_posicao_2[1]
+            linha_b = 2
+            coluna_b = opc_posicao_2[1]
 
         elif opc_posicao_2[0] == "C":
-            linha = 3
-            coluna = opc_posicao_2[1]
+            linha_b = 3
+            coluna_b = opc_posicao_2[1]
 
         elif opc_posicao_2[0] == "D":
-            linha = 4
-            coluna = opc_posicao_2[1]
+            linha_b = 4
+            coluna_b = opc_posicao_2[1]
 
         elif opc_posicao_2[0] == "E":
-            linha = 5
-            coluna = opc_posicao_2[1]
+            linha_b = 5
+            coluna_b = opc_posicao_2[1]
 
         elif opc_posicao_1 == '999':
             resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
