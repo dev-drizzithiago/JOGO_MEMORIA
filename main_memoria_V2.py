@@ -88,43 +88,53 @@ def iniciando_jogo():
                 print(coluna, end=' ')
 
         if primera_escolha == 1:
-            print(f'Primeira opção: {primera_escolha}')
-            print()
-            print(linha_aparencia)
-            opc_posicao_1 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
+            while True:
+                print(f'Primeira opção: {primera_escolha}')
+                print()
+                print(linha_aparencia)
+                opc_posicao_1 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
+                if int(opc_posicao_1[1]) > 6:
+                    print('Opção inccorreta1')
+                else:
+                    break
 
         elif primera_escolha == 2:
-            print(f'Segunda opção: {primera_escolha}')
-            print()
-            print(linha_aparencia)
-            opc_posicao_2 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
+            while True:
+                print(f'Segunda opção: {primera_escolha}')
+                print()
+                print(linha_aparencia)
+                opc_posicao_2 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
+                if int(opc_posicao_2[1]) > 6:
+                    print('Opção inccorreta1')
+                else:
+                    break
 
         if primera_escolha == 1:
             if opc_posicao_1[0] == "A":
                 linha_a = int(opc_posicao_1[1])
-                coluna_a = 2
+                coluna_a = 1
 
-                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][linha_a]
+                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
 
             elif opc_posicao_1[0] == "B":
                 linha_a = int(opc_posicao_1[1])
                 coluna_a = 2
-                print(linha_a, coluna_a)
+                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
 
             elif opc_posicao_1[0] == "C":
                 linha_a = int(opc_posicao_1[1])
                 coluna_a = 3
-                print(linha_a, coluna_a)
+                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
 
             elif opc_posicao_1[0] == "D":
                 linha_a = int(opc_posicao_1[1])
                 coluna_a = 4
-                print(linha_a, coluna_a)
+                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
 
             elif opc_posicao_1[0] == "E":
                 linha_a = int(opc_posicao_1[1])
                 coluna_a = 5
-                print(linha_a, coluna_a)
+                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
 
             elif opc_posicao_1 == '999':
                 resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
