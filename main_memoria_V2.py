@@ -113,7 +113,6 @@ def iniciando_jogo():
             if opc_posicao_1[0] == "A":
                 linha_a = int(opc_posicao_1[1])
                 coluna_a = 1
-
                 estrutura[linha_a][coluna_a] = dados_sorteio[linha_a][coluna_a]
 
             elif opc_posicao_1[0] == "B":
