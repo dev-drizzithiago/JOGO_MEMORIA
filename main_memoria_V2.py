@@ -70,16 +70,16 @@ def leia_int(valor_entrada):
 
 
 def iniciando_jogo():
+    primera_escolha = 1
     matriz_jogo = int
     estrutura, dados_sorteio = construcao_do_jogo()
 
     while True:
-        primera_escolha = 1
         linha_a = 0
         coluna_a = 0
         linha_b = 0
         coluna_b = 0
-
+        print(f'posição escolha: {primera_escolha}')
         print(linha_aparencia)
         for linha in estrutura:
             print()
@@ -87,16 +87,17 @@ def iniciando_jogo():
                 print(coluna, end=' ')
 
         if primera_escolha == 1:
+            print(f'Primeira opção: {primera_escolha}')
             print()
             print(linha_aparencia)
             opc_posicao_1 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
 
         elif primera_escolha == 2:
+            print(f'Segunda opção: {primera_escolha}')
             print()
             print(linha_aparencia)
             opc_posicao_2 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
-
-        print(primera_escolha)
+            primera_escolha = 1
 
         if primera_escolha == 1:
             if opc_posicao_1[0] == "A":
@@ -137,7 +138,7 @@ def iniciando_jogo():
             else:
                 print('Essa opção não existe')
             primera_escolha += 1
-            
+
         elif primera_escolha == 2:
             if opc_posicao_2[0] == "A":
                 linha_b = 1
@@ -175,6 +176,7 @@ def iniciando_jogo():
                     print('Voltando ao jogo!')
             else:
                 print('Essa opção não existe')
+        primera_escolha += 1
 
 while True:
 
