@@ -80,6 +80,9 @@ def iniciando_jogo():
         linha_b = 0
         coluna_b = 0
 
+        letra_vazia = False
+        numero_vazio = False
+
         print(linha_aparencia)
         for linha in estrutura:
             print()
@@ -96,7 +99,7 @@ def iniciando_jogo():
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
                 elif len(opc_posicao_1[0]) < 1 and int(opc_posicao_1[1]) > 6:
                     print('Opção inccorreta1')
-                elif int(opc_posicao_1[0]) >= 0:
+                elif int(opc_posicao_1[0]):
                     print('Escolha primeiro uma coluna (Letras)')
                 elif int(opc_posicao_1[1]) < 0:
                     print('Escolha primeiro uma coluna (Letras)')
