@@ -99,22 +99,22 @@ def iniciando_jogo():
         print(opc_posicao_1)
 
         if opc_posicao_1[0] == "A":
-            linha = 1
-            coluna = opc_posicao_1[1]
+            linha_a = 1
+            coluna_b = opc_posicao_1[1]
 
             print(linha, coluna)
 
         elif opc_posicao_1[0] == "B":
-            linha = 2
-            coluna = opc_posicao_1[1]
+            linha_a = 2
+            coluna_b = opc_posicao_1[1]
 
         elif opc_posicao_1[0] == "C":
-            linha = 3
-            coluna = opc_posicao_1[1]
+            linha_a = 3
+            coluna_b = opc_posicao_1[1]
 
         elif opc_posicao_1[0] == "D":
-            linha = 4
-            coluna = opc_posicao_1[1]
+            linha_a = 4
+            coluna_b = opc_posicao_1[1]
 
         elif opc_posicao_1[0] == "E":
             linha = 5
@@ -133,9 +133,9 @@ def iniciando_jogo():
             print('Essa opção não existe')
 
         if opc_posicao_2[0] == "A":
-            linha_b= 1
+            linha_b = 1
             coluna_b = opc_posicao_2[1]
-            print(linha, coluna)
+            print(linha_b, coluna_b)
 
         elif opc_posicao_2[0] == "B":
             linha_b = 2
