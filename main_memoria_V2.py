@@ -93,8 +93,10 @@ def iniciando_jogo():
                 print()
                 print(linha_aparencia)
                 opc_posicao_1 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
-                if int(opc_posicao_1[1]) > 6:
+                if len(opc_posicao_1[0]) < 1 and int(opc_posicao_1[1]) > 6:
                     print('Opção inccorreta1')
+                elif len(opc_posicao_1) == 0:
+                    print('Escolha uma coluna (Letras) e uma linha (Números')
                 else:
                     break
 
