@@ -84,17 +84,18 @@ def iniciando_jogo():
         linha_b = 0
         coluna_b = 0
 
-        print(linha_aparencia)
-        for linha in valor_lista_fixa:
-            print()
-            for coluna in linha:
-                print(coluna, end=' ')
-
-        print(linha_aparencia)
-        for linha in valor_lista_fixa:
-            print()
-            for coluna in linha:
-                print(coluna, end=' ')
+        if resposta_1 != resposta_2:
+            print(linha_aparencia)
+            for linha in valor_lista_fixa:
+                print()
+                for coluna in linha:
+                    print(coluna, end=' ')
+        else:
+            print(linha_aparencia)
+            for linha in valor_lista_mutavel:
+                print()
+                for coluna in linha:
+                    print(coluna, end=' ')
 
         #  Escolhendo a primeiro opção
         if primera_escolha == 1:
