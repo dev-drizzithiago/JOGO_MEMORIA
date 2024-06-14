@@ -75,8 +75,8 @@ def iniciando_jogo():
     resposta_2 = ''
     matriz_jogo = int
     estrutura, dados_sorteio = construcao_do_jogo()
-    valor_lista_fixa = estrutura
-    valor_lista_mutavel = estrutura
+    valor_lista_acertos = estrutura
+    valor_lista_erros = estrutura
     print(dados_sorteio)
     while True:
         linha_a = 0
@@ -84,15 +84,17 @@ def iniciando_jogo():
         linha_b = 0
         coluna_b = 0
 
-        if resposta_1 != resposta_2:
+        if resposta_1 == resposta_2:
             print(linha_aparencia)
-            for linha in valor_lista_fixa:
+            print('voce acertou')
+            for linha in valor_lista_acertos:
                 print()
                 for coluna in linha:
                     print(coluna, end=' ')
         else:
             print(linha_aparencia)
-            for linha in valor_lista_mutavel:
+            print('vc errou')
+            for linha in valor_lista_erros:
                 print()
                 for coluna in linha:
                     print(coluna, end=' ')
