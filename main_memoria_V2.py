@@ -75,8 +75,8 @@ def iniciando_jogo():
     resposta_2 = ''
     matriz_jogo = int
     estrutura, dados_sorteio = construcao_do_jogo()
-    valor_lista_fixa = dados_sorteio
-    valor_lista_mutavel = dados_sorteio
+    valor_lista_fixa = estrutura
+    valor_lista_mutavel = estrutura
     print(dados_sorteio)
     while True:
         linha_a = 0
