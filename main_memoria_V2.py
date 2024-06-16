@@ -94,18 +94,17 @@ def iniciando_jogo():
         print(resposta_1, resposta_2, linha_a, coluna_a, linha_b, coluna_b)
 
         if resposta_1 == resposta_2:
-            estrutura.append(resposta_1[linha_a][coluna_a])
-            estrutura.append(resposta_1[linha_b][coluna_b])
+            estrutura[linha_a][coluna_a] = resposta_1
+            estrutura[linha_b][coluna_b] = resposta_2
             print(linha_aparencia)
             print('voce acertou')
-            for linha in valor_lista_acertos:
+            for linha in estrutura:
                 print()
                 for coluna in linha:
                     print(coluna, end=' ')
         else:
-            print(linha_aparencia)
             print('vc errou')
-            for linha in valor_lista_erros:
+            for linha in estrutura:
                 print()
                 for coluna in linha:
                     print(coluna, end=' ')
@@ -141,31 +140,31 @@ def iniciando_jogo():
             if opc_posicao_1[0] == "A":  # Letras são considerados COLUNAS
                 linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_a = 1  # As letras são modificados por números reais
-                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
+                # estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
                 resposta_1 = dados_sorteio[linha_a - 1][coluna_a - 1]
 
             elif opc_posicao_1[0] == "B":  # Letras são considerados COLUNAS
                 linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_a = 2  # As letras são modificados por números reais
-                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
+                # estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
                 resposta_1 = dados_sorteio[linha_a - 1][coluna_a - 1]
 
             elif opc_posicao_1[0] == "C":  # Letras são considerados COLUNAS
                 linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_a = 3  # As letras são modificados por números reais
-                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
+                # estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
                 resposta_1 = dados_sorteio[linha_a - 1][coluna_a - 1]
 
             elif opc_posicao_1[0] == "D":  # Letras são considerados COLUNAS
                 linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_a = 4  # As letras são modificados por números reais
-                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
+                # estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
                 resposta_1 = dados_sorteio[linha_a - 1][coluna_a - 1]
 
             elif opc_posicao_1[0] == "E":  # Letras são considerados COLUNAS
                 linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_a = 5  # As letras são modificados por números reais
-                estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
+                # estrutura[linha_a][coluna_a] = dados_sorteio[linha_a - 1][coluna_a - 1]
                 resposta_1 = dados_sorteio[linha_a - 1][coluna_a - 1]
 
             elif opc_posicao_1 == '999':
