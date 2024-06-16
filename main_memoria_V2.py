@@ -84,6 +84,12 @@ def iniciando_jogo():
     valor_lista_erros = estrutura
     print(dados_sorteio)
 
+    print(linha_aparencia)
+    for linha in estrutura:
+        print()
+        for coluna in linha:
+            print(coluna, end=' ')
+
     while True:
 
         #  Escolhendo a primeiro opção
@@ -204,6 +210,8 @@ def iniciando_jogo():
 
         if jogada == 1:
 
+            estrutura[linha_a + 1][coluna_a + 1] = resposta_1
+
             print(linha_aparencia)
             for linha in estrutura:
                 print()
@@ -212,6 +220,7 @@ def iniciando_jogo():
 
         elif jogada == 2:
 
+            estrutura[linha_a + 1][coluna_a + 1] = resposta_2
             print(linha_aparencia)
             for linha in estrutura:
                 print()
@@ -221,8 +230,6 @@ def iniciando_jogo():
         elif jogada == 3:
 
             if resposta_1 == resposta_2:
-                estrutura[linha_a + 1][coluna_a + 1] = resposta_1
-                estrutura[linha_a + 1][coluna_a + 1] = resposta_2
 
                 print(linha_aparencia)
                 print('voce acertou')
@@ -243,7 +250,7 @@ def iniciando_jogo():
                         print(coluna, end=' ')
 
             jogada = 1
-            
+
         jogada += 1
 
 while True:
