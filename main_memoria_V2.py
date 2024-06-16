@@ -216,7 +216,7 @@ def iniciando_jogo():
             print()
             print(f'Sua pontuação: {ponto_partida}')
             print(f'\n{linha_aparencia}')
-
+            """### Quando as pares são iguais, a estrutura vai se manter com a posição encontrada"""
             for linha in estrutura:
                 print()
                 for coluna in linha:
