@@ -15,13 +15,13 @@ def construcao_do_jogo():
     """
 
     """### Essa estrutura sera responsável em apresentar ao usuário o mode de inicio"""
-    lista_cobertura_ = [['              ', ' A', '   B', '   C', '   D', '   E'],
-                        ['            1', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
-                        ['            2', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
-                        ['            3', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
-                        ['            4', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
-                        ['            5', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
-                        ['            6', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ']]
+    lista_cobertura_ = [['                   ', ' A', '   B', '   C', '   D', '   E'],
+                        ['                 1', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
+                        ['                 2', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
+                        ['                 3', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
+                        ['                 4', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
+                        ['                 5', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
+                        ['                 6', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ']]
 
     """### Possui os icones do jogo. Possui 30 itens ao todo"""
     lista_emoj_signos = numpy.array([' 🐶 ', ' 🪁 ', ' 😈 ', ' 🧠 ', ' 💩 ',
@@ -82,9 +82,7 @@ def iniciando_jogo():
             print(coluna, end=' ')
 
     while True:
-        print()
-        print(linha_aparencia)
-        print(f'Sua pontuação: {ponto_partida}')
+
         #  Escolhendo a primeiro opção
         if jogada == 1:
             while True:
@@ -203,16 +201,22 @@ def iniciando_jogo():
 
             estrutura[linha_a][coluna_a] = resposta_1
 
+            print()
+            print(f'Sua pontuação: {ponto_partida}')
             print(f'\n{linha_aparencia}')
+
             for linha in estrutura:
                 print()
                 for coluna in linha:
                     print(coluna, end=' ')
 
         elif jogada == 2:
-
             estrutura[linha_b][coluna_b] = resposta_2
+
+            print()
+            print(f'Sua pontuação: {ponto_partida}')
             print(f'\n{linha_aparencia}')
+
             for linha in estrutura:
                 print()
                 for coluna in linha:
@@ -223,7 +227,9 @@ def iniciando_jogo():
             if resposta_1 == resposta_2:
                 ponto_partida += 1
                 print(f'\n{linha_aparencia}')
-                print(f'Parambéns! Você encontrou o Par de {resposta_1}')
+                print(f'Parambéns! Você acertou!')
+
+                """### Caso acerte, a estrutura vai continuar o mesmo"""
                 for linha in estrutura:
                     print()
                     for coluna in linha:
@@ -231,11 +237,13 @@ def iniciando_jogo():
 
             else:
                 print(f'\n{linha_aparencia}')
-                print(f'Você não descobriu o par de {resposta_1}')
+                print(f'Você errou')
                 sair_do_jogo = input('Aperte "enter" para continuar (Sair=999)')
+
                 if sair_do_jogo == '999':
                     print('Você esta saindo do jogo')
                     break
+                """### Caso erre, a posição vai voltar com o icone padrão"""
                 estrutura[linha_a][coluna_a] = ' 😄 '
                 estrutura[linha_b][coluna_b] = ' 😄 '
 
