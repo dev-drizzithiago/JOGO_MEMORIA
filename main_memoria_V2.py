@@ -78,11 +78,19 @@ def iniciando_jogo():
     valor_lista_acertos = estrutura
     valor_lista_erros = estrutura
     print(dados_sorteio)
+
+    for linha in valor_lista_acertos:
+        print()
+        for coluna in linha:
+            print(coluna, end=' ')
+
     while True:
-        linha_a = 0
-        coluna_a = 0
-        linha_b = 0
-        coluna_b = 0
+        linha_a = int
+        coluna_a = int
+        linha_b = int
+        coluna_b = int
+
+        print(resposta_1, resposta_2, linha_a, coluna_a, linha_b, coluna_b)
 
         if resposta_1 == resposta_2:
             valor_lista_acertos = estrutura
