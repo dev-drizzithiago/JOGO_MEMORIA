@@ -69,10 +69,8 @@ def leia_int(valor_entrada):
 
 
 def iniciando_jogo():
-    linha_a, coluna_a, linha_b, coluna_b = 0
-
-    ponto_partida = 0
-    ponto_final = 0
+    linha_a, coluna_a, linha_b, coluna_b = 0, 0, 0, 0
+    ponto_partida, ponto_final = 0, 0
 
     jogada = 1
     resposta_1 = ''
@@ -88,7 +86,9 @@ def iniciando_jogo():
             print(coluna, end=' ')
 
     while True:
-
+        print()
+        print(linha_aparencia)
+        print(f'Sua pontuação: {ponto_partida}')
         #  Escolhendo a primeiro opção
         if jogada == 1:
             while True:
@@ -232,7 +232,6 @@ def iniciando_jogo():
                     print()
                     for coluna in linha:
                         print(coluna, end=' ')
-
 
             else:
                 print(f'\n{linha_aparencia}')
