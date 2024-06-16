@@ -255,7 +255,12 @@ def iniciando_jogo():
             jogada = 1
         else:
             jogada += 1
-    print('Fim do jogo')
+
+
+def _pontuacao_geral(valor_entrada):
+    print('Fim do jogo.')
+    nome_jogador = input('Digite seu nome: ').title()
+
     gravando_pontuacao = open(arq_save_pontos, 'w')
     gravando_pontuacao.write(f'')
 
