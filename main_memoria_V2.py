@@ -92,7 +92,22 @@ def iniciando_jogo():
     while True:
 
         print(resposta_1, resposta_2, linha_a, coluna_a, linha_b, coluna_b)
-        if primera_escolha == 3:
+
+        if primera_escolha == 1:
+            print(linha_aparencia)
+            for linha in estrutura:
+                print()
+                for coluna in linha:
+                    print(coluna, end=' ')
+
+        elif primera_escolha == 2:
+            print(linha_aparencia)
+            for linha in estrutura:
+                print()
+                for coluna in linha:
+                    print(coluna, end=' ')
+
+        elif primera_escolha == 3:
             if resposta_1 == resposta_2:
 
                 estrutura[linha_a][coluna_a] = resposta_1
