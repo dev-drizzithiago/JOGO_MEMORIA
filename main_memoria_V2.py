@@ -92,22 +92,28 @@ def iniciando_jogo():
     while True:
 
         print(resposta_1, resposta_2, linha_a, coluna_a, linha_b, coluna_b)
+        if primera_escolha == 3:
+            if resposta_1 == resposta_2:
 
-        if resposta_1 == resposta_2:
-            estrutura[linha_a][coluna_a] = resposta_1
-            estrutura[linha_b][coluna_b] = resposta_2
-            print(linha_aparencia)
-            print('voce acertou')
-            for linha in estrutura:
-                print()
-                for coluna in linha:
-                    print(coluna, end=' ')
-        else:
-            print('vc errou')
-            for linha in estrutura:
-                print()
-                for coluna in linha:
-                    print(coluna, end=' ')
+                estrutura[linha_a][coluna_a] = resposta_1
+                estrutura[linha_a][coluna_a] = resposta_2
+
+                print(linha_aparencia)
+                print('voce acertou')
+                for linha in estrutura:
+                    print()
+                    for coluna in linha:
+                        print(coluna, end=' ')
+            else:
+                print('vc errou')
+
+                estrutura[linha_a-1][coluna_a-1] = ' 😄 '
+                estrutura[linha_a-1][coluna_a-1] = ' 😄 '
+
+                for linha in estrutura:
+                    print()
+                    for coluna in linha:
+                        print(coluna, end=' ')
 
         #  Escolhendo a primeiro opção
         if primera_escolha == 1:
@@ -225,8 +231,6 @@ def iniciando_jogo():
 
         if primera_escolha == 1:
             primera_escolha += 1
-        else:
-            primera_escolha -= 1
 
 while True:
 
