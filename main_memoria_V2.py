@@ -102,7 +102,7 @@ def iniciando_jogo():
                 for coluna in linha:
                     print(coluna, end=' ')
 
-        elif primera_escolha == 3:
+        elif jogada == 3:
             if resposta_1 == resposta_2:
 
                 estrutura[linha_a][coluna_a] = resposta_1
@@ -152,7 +152,7 @@ def iniciando_jogo():
                 else:
                     break
 
-        if primera_escolha == 1:
+        if jogada == 1:
             if opc_posicao_1[0] == "A":  # Letras são considerados COLUNAS
                 linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
                 coluna_a = 1  # As letras são modificados por números reais
