@@ -211,7 +211,7 @@ def iniciando_jogo():
                 for coluna in linha:
                     print(coluna, end=' ')
 
-        elif jogada == 3:
+        elif jogada == 3:  # Jogada 3 é para saber se a 1º e 2º opção esta corretas
 
             if resposta_1 == resposta_2:
                 ponto_partida += 1
@@ -247,6 +247,7 @@ def iniciando_jogo():
         else:
             jogada += 1
 
+"""### Menu principal"""
 while True:
 
     print(f'\n{linha_aparencia}')
