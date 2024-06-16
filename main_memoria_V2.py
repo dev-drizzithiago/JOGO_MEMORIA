@@ -257,8 +257,10 @@ def iniciando_jogo():
             jogada += 1
 
 
-def _pontuacao_geral(valor_entrada):
+def _gravando_ponto(valor_entrada):
     print('Fim do jogo.')
+    print(f'Sua pontuaçao foi: {valor_entrada}')
+    print(linha_aparencia)
     nome_jogador = input('Digite seu nome: ').title()
 
     gravando_pontuacao = open(arq_save_pontos, 'w')
