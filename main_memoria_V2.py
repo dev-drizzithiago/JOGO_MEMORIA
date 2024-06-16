@@ -4,7 +4,7 @@ from time import sleep
 
 
 """#### Declaração de variáveis"""
-sorteio_emoj, dados_jogo, inicio_jogo = list()
+sorteio_emoj, dados_jogo, inicio_jogo = list(), list(), list()
 
 linha_aparencia = '--==--' * 15
 
@@ -188,12 +188,10 @@ def iniciando_jogo():
                 print('Essa opção não existe')
 
         if jogada == 1:
-
             estrutura[linha_a][coluna_a] = resposta_1
 
-            print()
-            print(f'Sua pontuação: {ponto_partida}')
             print(f'\n{linha_aparencia}')
+            print(f'Sua pontuação: {ponto_partida}')
 
             """### A primeira posição foi entrada, então continuar a visualização para o jogador"""
             for linha in estrutura:
@@ -204,9 +202,8 @@ def iniciando_jogo():
         elif jogada == 2:
             estrutura[linha_b][coluna_b] = resposta_2
 
-            print()
-            print(f'Sua pontuação: {ponto_partida}')
             print(f'\n{linha_aparencia}')
+            print(f'Sua pontuação: {ponto_partida}')
 
             """### Quando as pares são iguais, a estrutura vai se manter com a posição encontrada"""
             for linha in estrutura:
@@ -218,6 +215,7 @@ def iniciando_jogo():
 
             if resposta_1 == resposta_2:
                 ponto_partida += 1
+
                 print(f'\n{linha_aparencia}')
                 print(f'Parambéns! Você acertou!')
 
