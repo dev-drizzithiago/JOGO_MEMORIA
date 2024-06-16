@@ -256,7 +256,8 @@ def iniciando_jogo():
 
 
 def _pontuacao_geral():
-    gravando_pontuacao = open()
+    gravando_pontuacao = open(arq_save_pontos, 'w')
+    gravando_pontuacao.write(f'')
 
 """### Menu principal"""
 while True:
