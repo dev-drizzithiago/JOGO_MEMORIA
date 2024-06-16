@@ -79,7 +79,6 @@ def iniciando_jogo():
     jogada = 1
     resposta_1 = ''
     resposta_2 = ''
-    matriz_jogo = int
     estrutura, dados_sorteio = construcao_do_jogo()
     valor_lista_acertos = estrutura
     valor_lista_erros = estrutura
@@ -207,7 +206,6 @@ def iniciando_jogo():
             else:
                 print('Essa opção não existe')
 
-
         if jogada == 1:
 
             estrutura[linha_a][coluna_a] = resposta_1
@@ -241,7 +239,10 @@ def iniciando_jogo():
             else:
                 print(f'\n{linha_aparencia}')
                 print('vc errou')
-                sleep(5)
+                sair_do_jogo = input('Aperte "enter" para continuar (Sair=999)')
+                if sair_do_jogo == '999':
+                    print('Você esta saindo do jogo')
+                    break
                 estrutura[linha_a][coluna_a] = ' 😄 '
                 estrutura[linha_b][coluna_b] = ' 😄 '
 
