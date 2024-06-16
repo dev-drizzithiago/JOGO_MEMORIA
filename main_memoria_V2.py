@@ -70,6 +70,11 @@ def leia_int(valor_entrada):
 
 
 def iniciando_jogo():
+    linha_a = 0
+    coluna_a = 0
+    linha_b = 0
+    coluna_b = 0
+
     primera_escolha = 1
     resposta_1 = ''
     resposta_2 = ''
@@ -85,15 +90,12 @@ def iniciando_jogo():
             print(coluna, end=' ')
 
     while True:
-        linha_a = int
-        coluna_a = int
-        linha_b = int
-        coluna_b = int
 
         print(resposta_1, resposta_2, linha_a, coluna_a, linha_b, coluna_b)
 
         if resposta_1 == resposta_2:
-            valor_lista_acertos = estrutura
+            estrutura.append(resposta_1[linha_a][coluna_a])
+            estrutura.append(resposta_1[linha_b][coluna_b])
             print(linha_aparencia)
             print('voce acertou')
             for linha in valor_lista_acertos:
