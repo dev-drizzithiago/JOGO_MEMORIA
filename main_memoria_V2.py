@@ -73,8 +73,8 @@ def iniciando_jogo():
     jogada = 1
     resposta_1, resposta_2 = '', ''
     estrutura, dados_sorteio = construcao_do_jogo()
-    valor_lista_acertos, valor_lista_erros = estrutura
 
+    """### Estrutura inicial"""
     print(linha_aparencia)
     for linha in estrutura:
         print()
