@@ -1,6 +1,7 @@
 import random
-from time import sleep
 import numpy
+from time import sleep
+
 
 """#### """
 sorteio_emoj = list()
@@ -211,7 +212,7 @@ def iniciando_jogo():
 
             estrutura[linha_a][coluna_a] = resposta_1
 
-            print(linha_aparencia)
+            print(f'\n{linha_aparencia}')
             for linha in estrutura:
                 print()
                 for coluna in linha:
@@ -220,7 +221,7 @@ def iniciando_jogo():
         elif jogada == 2:
 
             estrutura[linha_b][coluna_b] = resposta_2
-            print(linha_aparencia)
+            print(f'\n{linha_aparencia}')
             for linha in estrutura:
                 print()
                 for coluna in linha:
@@ -230,17 +231,17 @@ def iniciando_jogo():
 
             if resposta_1 == resposta_2:
 
-                print(linha_aparencia)
-                print('\nvoce acertou\n')
+                print(f'\n{linha_aparencia}')
+                print('voce acertou')
                 for linha in estrutura:
                     print()
                     for coluna in linha:
                         print(coluna, end=' ')
 
             else:
-
-                print('\nvc errou\n')
-
+                print(f'\n{linha_aparencia}')
+                print('vc errou')
+                sleep(5)
                 estrutura[linha_a][coluna_a] = ' 😄 '
                 estrutura[linha_b][coluna_b] = ' 😄 '
 
