@@ -3,11 +3,10 @@ import numpy
 from time import sleep
 
 
-"""#### """
+"""#### Declaração de variáveis"""
 sorteio_emoj = list()
 dados_jogo = list()
 inicio_jogo = list()
-# estrutura_final_jogo = list()
 
 linha_aparencia = '--==--' * 15
 
@@ -70,10 +69,10 @@ def leia_int(valor_entrada):
 
 
 def iniciando_jogo():
-    linha_a = 0
-    coluna_a = 0
-    linha_b = 0
-    coluna_b = 0
+    linha_a, coluna_a, linha_b, coluna_b = 0
+
+    ponto_partida = 0
+    ponto_final = 0
 
     jogada = 1
     resposta_1 = ''
@@ -226,17 +225,18 @@ def iniciando_jogo():
         elif jogada == 3:
 
             if resposta_1 == resposta_2:
-
+                ponto_partida += 1
                 print(f'\n{linha_aparencia}')
-                print('voce acertou')
+                print(f'Parambéns! Você encontrou o Par de {resposta_1}')
                 for linha in estrutura:
                     print()
                     for coluna in linha:
                         print(coluna, end=' ')
 
+
             else:
                 print(f'\n{linha_aparencia}')
-                print('vc errou')
+                print(f'Você não descobriu o par de {resposta_1}')
                 sair_do_jogo = input('Aperte "enter" para continuar (Sair=999)')
                 if sair_do_jogo == '999':
                     print('Você esta saindo do jogo')
