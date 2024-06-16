@@ -85,6 +85,7 @@ def iniciando_jogo():
         coluna_b = 0
 
         if resposta_1 == resposta_2:
+            valor_lista_acertos = estrutura
             print(linha_aparencia)
             print('voce acertou')
             for linha in valor_lista_acertos:
