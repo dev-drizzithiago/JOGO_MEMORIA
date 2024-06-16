@@ -1,7 +1,9 @@
 import random
 import numpy
+from os import mkdir
 from time import sleep
 from pathlib import Path
+
 
 
 """#### Declaração de variáveis"""
@@ -253,9 +255,7 @@ def iniciando_jogo():
             jogada = 1
         else:
             jogada += 1
-
-
-def _pontuacao_geral():
+    print('Fim do jogo')
     gravando_pontuacao = open(arq_save_pontos, 'w')
     gravando_pontuacao.write(f'')
 
