@@ -4,9 +4,7 @@ from time import sleep
 
 
 """#### Declaração de variáveis"""
-sorteio_emoj = list()
-dados_jogo = list()
-inicio_jogo = list()
+sorteio_emoj, dados_jogo, inicio_jogo = list()
 
 linha_aparencia = '--==--' * 15
 
@@ -73,11 +71,9 @@ def iniciando_jogo():
     ponto_partida, ponto_final = 0, 0
 
     jogada = 1
-    resposta_1 = ''
-    resposta_2 = ''
+    resposta_1, resposta_2 = '', ''
     estrutura, dados_sorteio = construcao_do_jogo()
-    valor_lista_acertos = estrutura
-    valor_lista_erros = estrutura
+    valor_lista_acertos, valor_lista_erros = estrutura
 
     print(linha_aparencia)
     for linha in estrutura:
