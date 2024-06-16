@@ -29,6 +29,7 @@ def construcao_do_jogo():
                                      ' 🐧 ', ' 🌲 ', ' 🍕 ', ' 🍩 ', ' 🏠 ',
                                      ' 🪐 ', ' 🌠 ', ' 🏐 ', ' 🎵 ', ' 🎼 ',
                                      ' 💣 ', ' 🩸 ', ' 🧿 ', ' ☎ ', ' 🎤 '])
+    
     """### Embaralha todos os icones para que sejam sorteados para o jogo"""
     random.shuffle(lista_emoj_signos)
 
@@ -246,6 +247,10 @@ def iniciando_jogo():
             jogada = 1
         else:
             jogada += 1
+
+
+def _pontuacao_geral():
+
 
 """### Menu principal"""
 while True:
