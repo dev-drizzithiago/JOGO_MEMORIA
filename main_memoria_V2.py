@@ -206,11 +206,10 @@ def iniciando_jogo():
             else:
                 print('Essa opção não existe')
 
-        print(resposta_1, resposta_2, linha_a, coluna_a, linha_b, coluna_b)
 
         if jogada == 1:
 
-            estrutura[linha_a + 1][coluna_a + 1] = resposta_1
+            estrutura[linha_a][coluna_a] = resposta_1
 
             print(linha_aparencia)
             for linha in estrutura:
@@ -220,7 +219,7 @@ def iniciando_jogo():
 
         elif jogada == 2:
 
-            estrutura[linha_a + 1][coluna_a + 1] = resposta_2
+            estrutura[linha_b][coluna_b] = resposta_2
             print(linha_aparencia)
             for linha in estrutura:
                 print()
@@ -232,26 +231,28 @@ def iniciando_jogo():
             if resposta_1 == resposta_2:
 
                 print(linha_aparencia)
-                print('voce acertou')
+                print('\nvoce acertou\n')
                 for linha in estrutura:
                     print()
                     for coluna in linha:
                         print(coluna, end=' ')
+
             else:
 
-                print('vc errou')
+                print('\nvc errou\n')
 
-                estrutura[linha_a + 1][coluna_a + 1] = ' 😄 '
-                estrutura[linha_b + 1][coluna_b + 1] = ' 😄 '
+                estrutura[linha_a][coluna_a] = ' 😄 '
+                estrutura[linha_b][coluna_b] = ' 😄 '
 
                 for linha in estrutura:
                     print()
                     for coluna in linha:
                         print(coluna, end=' ')
 
+        if jogada == 3:
             jogada = 1
-
-        jogada += 1
+        else:
+            jogada += 1
 
 while True:
 
