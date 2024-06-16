@@ -1,10 +1,16 @@
 import random
 import numpy
 from time import sleep
+from pathlib import Path
 
 
 """#### Declaração de variáveis"""
 sorteio_emoj, dados_jogo, inicio_jogo = list(), list(), list()
+
+pasta_home = Path.home()
+local_arq_pontuacao = (pasta_home, 'AppData', 'LocalLow')
+arq_pontuacao = 'Pontuação Geral.txt'
+arq_save_pontos = f'{local_arq_pontuacao}\\{arq_pontuacao}'
 
 linha_aparencia = '--==--' * 15
 
@@ -29,7 +35,7 @@ def construcao_do_jogo():
                                      ' 🐧 ', ' 🌲 ', ' 🍕 ', ' 🍩 ', ' 🏠 ',
                                      ' 🪐 ', ' 🌠 ', ' 🏐 ', ' 🎵 ', ' 🎼 ',
                                      ' 💣 ', ' 🩸 ', ' 🧿 ', ' ☎ ', ' 🎤 '])
-    
+
     """### Embaralha todos os icones para que sejam sorteados para o jogo"""
     random.shuffle(lista_emoj_signos)
 
@@ -250,7 +256,7 @@ def iniciando_jogo():
 
 
 def _pontuacao_geral():
-
+    gravando_pontuacao = open()
 
 """### Menu principal"""
 while True:
