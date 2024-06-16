@@ -11,7 +11,6 @@ inicio_jogo = list()
 
 linha_aparencia = '--==--' * 15
 
-
 def construcao_do_jogo():
     """
     Função responsável em construir toda a estrutura do jogo.
