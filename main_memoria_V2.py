@@ -251,11 +251,11 @@ while True:
 
     print(f'\n{linha_aparencia}')
     print('''
-            [1] Iniciar jogo
-            [2] Ver pontuação
-            [0] Sair
-    ''')
-    resp_opcao_menu = leia_int('Escolha uma OPÇÂO: ')
+                            [1] Iniciar jogo
+                            [2] Ver pontuação
+                            [0] Sair
+          ''')
+    resp_opcao_menu = leia_int('                            Escolha uma OPÇÂO: ')
 
     if resp_opcao_menu == 1:
         iniciando_jogo()
