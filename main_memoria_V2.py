@@ -75,7 +75,7 @@ def iniciando_jogo():
     linha_b = 0
     coluna_b = 0
 
-    primera_escolha = 1
+    jogada = 1
     resposta_1 = ''
     resposta_2 = ''
     matriz_jogo = int
@@ -84,23 +84,18 @@ def iniciando_jogo():
     valor_lista_erros = estrutura
     print(dados_sorteio)
 
-    for linha in valor_lista_acertos:
-        print()
-        for coluna in linha:
-            print(coluna, end=' ')
-
     while True:
 
         print(resposta_1, resposta_2, linha_a, coluna_a, linha_b, coluna_b)
 
-        if primera_escolha == 1:
+        if jogada == 1:
             print(linha_aparencia)
             for linha in estrutura:
                 print()
                 for coluna in linha:
                     print(coluna, end=' ')
 
-        elif primera_escolha == 2:
+        elif jogada == 2:
             print(linha_aparencia)
             for linha in estrutura:
                 print()
@@ -131,11 +126,11 @@ def iniciando_jogo():
                         print(coluna, end=' ')
 
         #  Escolhendo a primeiro opção
-        if primera_escolha == 1:
+        if jogada == 1:
             while True:
                 print()
                 print(linha_aparencia)
-                opc_posicao_1 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
+                opc_posicao_1 = input(f"Escolha a {jogada}º posição(voltar=999): ").upper()
 
                 if len(opc_posicao_1) == 0:
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
@@ -144,11 +139,11 @@ def iniciando_jogo():
                 else:
                     break
         #  A segunda opção vai ser escolhida
-        elif primera_escolha == 2:
+        elif jogada == 2:
             while True:
                 print()
                 print(linha_aparencia)
-                opc_posicao_2 = input(f"Escolha a {primera_escolha}º posição(voltar=999): ").upper()
+                opc_posicao_2 = input(f"Escolha a {jogada}º posição(voltar=999): ").upper()
 
                 if len(opc_posicao_1) == 0:
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
@@ -200,7 +195,7 @@ def iniciando_jogo():
             else:
                 print('Opção não existe!')
 
-        elif primera_escolha == 2:
+        elif jogada == 2:
 
             if opc_posicao_2[0] == "A":  # Letras são considerados COLUNAS
                 linha_b = int(opc_posicao_2[1])
@@ -244,8 +239,8 @@ def iniciando_jogo():
             else:
                 print('Essa opção não existe')
 
-        if primera_escolha == 1:
-            primera_escolha += 1
+        if jogada == 1:
+            jogada += 1
 
 while True:
 
