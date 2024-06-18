@@ -226,7 +226,7 @@ def iniciando_jogo():
                 ponto_partida += 1
 
                 print(f'\n{linha_aparencia}')
-                print(f'Parabéns! Você acertou!', f'Você esta com {ponto_partida} ponto')
+                print(f'Parabéns! Você acertou! \n', f'Você esta com {ponto_partida} ponto')
 
                 """### Caso acerte, a estrutura vai continuar o mesmo"""
                 for linha in estrutura:
