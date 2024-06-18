@@ -11,8 +11,17 @@ sorteio_emoj, dados_jogo, inicio_jogo = list(), list(), list()
 
 pasta_home = Path.home()
 local_arq_pontuacao = (pasta_home, 'AppData', 'LocalLow')
+try:
+    mkdir(local_arq_pontuacao + '\\Jogo da Memoria V2.txt')
+except FileExistsError:
+    pass
+
 arq_pontuacao = 'Pontuação Geral.txt'
-arq_save_pontos = f'{local_arq_pontuacao}\\{arq_pontuacao}'
+
+try:
+    arq_save_pontos = f'{local_arq_pontuacao}\\{arq_pontuacao}'
+except FileExistsError:
+    pass
 
 linha_aparencia = '--==--' * 15
 
