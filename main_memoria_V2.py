@@ -238,7 +238,7 @@ def iniciando_jogo():
                 print(f'\n{linha_aparencia}')
                 print(f'Parabéns! Você acertou! \n', f'Você esta com {ponto_partida} ponto')
 
-                sair_do_jogo = input('Aperte "enter" para continuar (Sair=999)')
+                sair_do_jogo = input('Aperte "enter" para continuar (Sair=999): ')
 
                 if sair_do_jogo == '999':
                     print('Você esta saindo do jogo')
@@ -253,7 +253,7 @@ def iniciando_jogo():
             else:
                 print(f'\n{linha_aparencia}')
                 print(f'Você errou')
-                sair_do_jogo = input('Aperte "enter" para continuar (Sair=999)')
+                sair_do_jogo = input('Aperte "enter" para continuar (Sair=999): ')
 
                 if sair_do_jogo == '999':
                     print('Você esta saindo do jogo')
