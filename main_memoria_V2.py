@@ -4,8 +4,6 @@ from os import mkdir
 from time import sleep
 from pathlib import Path
 
-
-
 """#### Declaração de variáveis"""
 sorteio_emoj, dados_jogo, inicio_jogo = list(), list(), list()
 
@@ -16,9 +14,10 @@ try:
 except FileExistsError:
     pass
 
-arq_pontuacao = 'Pontuação Geral.txt'
+
 
 try:
+    arq_pontuacao = 'Pontuação Geral.txt'
     arq_save_pontos = f'{local_arq_pontuacao}\\{"Jogo da Memoria V2\\" + arq_pontuacao}'
 except FileExistsError:
     pass
@@ -45,7 +44,12 @@ def construcao_do_jogo():
                                      ' 🤚 ', ' 👗 ', ' 🐬 ', ' 🐊 ', ' 🦉 ',
                                      ' 🐧 ', ' 🌲 ', ' 🍕 ', ' 🍩 ', ' 🏠 ',
                                      ' 🪐 ', ' 🌠 ', ' 🏐 ', ' 🎵 ', ' 🎼 ',
-                                     ' 💣 ', ' 🩸 ', ' 🧿 ', ' ☎ ', ' 🎤 '])
+                                     ' 💣 ', ' 🩸 ', ' 🧿 ', ' ☎ ', ' 🎤 ',
+                                     ' 🐒 ', ' 🦁 ', ' 🐸 ', ' 🌹 ', ' 🍕 ',
+                                     ' 🌎 ', ' 🚜 ', ' 🚥 ', ' 🎲 ', ' 💙 ',
+                                     ' ❤ ', ' 👽 ', ' 🤖 ', ' 🦍 ', ' 🐼 ',
+                                     ' 🦋 ', ' 🐞 ', ' 🐳 ', ' 🎱 ', ' 🔴 '])
+
 
     """### Embaralha todos os icones para que sejam sorteados para o jogo"""
     random.shuffle(lista_emoj_signos)
