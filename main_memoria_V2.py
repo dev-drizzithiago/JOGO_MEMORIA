@@ -238,6 +238,12 @@ def iniciando_jogo():
                 print(f'\n{linha_aparencia}')
                 print(f'Parabéns! Você acertou! \n', f'Você esta com {ponto_partida} ponto')
 
+                sair_do_jogo = input('Aperte "enter" para continuar (Sair=999)')
+
+                if sair_do_jogo == '999':
+                    print('Você esta saindo do jogo')
+                    break
+
                 """### Caso acerte, a estrutura vai continuar o mesmo"""
                 for linha in estrutura:
                     print()
