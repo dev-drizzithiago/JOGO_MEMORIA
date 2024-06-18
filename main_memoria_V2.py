@@ -8,13 +8,11 @@ from pathlib import Path
 sorteio_emoj, dados_jogo, inicio_jogo = list(), list(), list()
 
 pasta_home = Path.home()
-local_arq_pontuacao = (pasta_home, 'AppData', 'LocalLow')
+local_arq_pontuacao = str(Path(pasta_home, 'AppData', 'LocalLow', 'Jogo_da_Memoria_V2'))
 try:
-    mkdir(local_arq_pontuacao + '\\Jogo da Memoria V2')
+    mkdir(local_arq_pontuacao)
 except FileExistsError:
     pass
-
-
 
 try:
     arq_pontuacao = 'Pontuação Geral.txt'
