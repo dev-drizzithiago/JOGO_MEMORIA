@@ -29,7 +29,7 @@ def construcao_do_jogo():
     """
 
     """### Essa estrutura sera responsável em apresentar ao usuário o mode de inicio"""
-    lista_cobertura_ = [['                   ', ' A', '   B', '   C', '   D', '   E'],
+    lista_cobertura_ = [['                   ', ' A', '   B', '   C', '   D', '   E  '],
                         ['                 1', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
                         ['                 2', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
                         ['                 3', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 ', ' 😄 '],
@@ -47,7 +47,6 @@ def construcao_do_jogo():
                                      ' 🌎 ', ' 🚜 ', ' 🚥 ', ' 🎲 ', ' 💙 ',
                                      ' ❤ ', ' 👽 ', ' 🤖 ', ' 🦍 ', ' 🐼 ',
                                      ' 🦋 ', ' 🐞 ', ' 🐳 ', ' 🎱 ', ' 🔴 '])
-
 
     """### Embaralha todos os icones para que sejam sorteados para o jogo"""
     random.shuffle(lista_emoj_signos)
