@@ -112,12 +112,15 @@ def iniciando_jogo():
                 if len(opc_posicao_1) == 0:
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
 
-                elif opc_posicao_1[0] not in "ABCDEF":
+                elif opc_posicao_1[0] not in "ABCDE" and opc_posicao_1[1] in '123456':
                     print('Digite a letra referente a coluna "A B C E F"')
 
-                    print('Por favor, digite apos a coluna a linha do item.')
+                elif opc_posicao_1[0] not in 'ABCDE' and opc_posicao_1[1] not in '123456':
+                    print('Digite a letra referente a coluna "A B C E F" , a linha esta numerada de 1 até 6')
+
                 elif opc_posicao_1[0] in 'ABCDE' and opc_posicao_1[1] not in '123456':
-                    print('Por favor, digite apos a coluna a linha do item, a linha esta numerada de 1 até 6')
+                    print('Você precisa digita a linha no intervalo de 1 até 6')
+
                 else:
                     'break'
 
