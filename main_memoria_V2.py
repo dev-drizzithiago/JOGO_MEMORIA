@@ -111,10 +111,16 @@ def iniciando_jogo():
 
                 if len(opc_posicao_1) == 0:
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
-                elif len(opc_posicao_1[0]) < 1 and int(opc_posicao_1[1]) > 6:
-                    print('Opção inccorreta')
+
+                elif opc_posicao_1[0] not in "ABCDEF":
+                    print('Digite a letra referente a coluna "A B C E F"')
+                elif opc_posicao_1[0] in 'ABCDEF' and opc_posicao_1[1] == "":
+                    print('Por favor, digite apos a coluna a linha do item.')
+                elif opc_posicao_1[0] in 'ABCDE' and opc_posicao_1[1] not in '123456':
+                    print('A linha esta numerada de 1 até 6')
                 else:
-                    break
+                    'break'
+
         #  A segunda opção vai ser escolhida
         elif jogada == 2:
             while True:
@@ -122,13 +128,14 @@ def iniciando_jogo():
                 print(linha_aparencia)
                 opc_posicao_2 = input(f"Escolha a {jogada}º posição(voltar=999): ").upper()
 
-                if len(opc_posicao_1) == 0:
+                if len(opc_posicao_2) == 0:
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
                 elif len(opc_posicao_2[0]) < 1 and int(opc_posicao_2[1]) > 6:
-                    print('Opção inccorreta1')
+                    print('Opção inccorreta')
                 else:
                     break
 
+        #  Primeira analise para as informações de dados
         if jogada == 1:
             if opc_posicao_1[0] == "A":  # Letras são considerados COLUNAS
                 linha_a = int(opc_posicao_1[1])  # Número chega como string sendo convertidas para inteiro
