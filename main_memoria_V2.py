@@ -108,22 +108,24 @@ def iniciando_jogo():
                 print()
                 print(linha_aparencia)
                 opc_posicao_1 = input(f"Escolha a {jogada}º posição(voltar=999): ").upper()
-                print(len(opc_posicao_1))
 
                 if len(opc_posicao_1) == 0:
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
 
                 elif len(opc_posicao_1) == 1:
-                    print('Você precisa digitar uma linha no intervalo de 1 a 6')
+                    if opc_posicao_1 not in 'ABCDE':
+                        print('Voce precisa indicar uma coordenado com as letras  "A B C E F"')
+                    elif opc_posicao_1 in 'ABCDE':
+                        print('Você precisa indicar a linha no intervalo de 1 a 6')
 
                 elif opc_posicao_1[0] not in "ABCDE" and opc_posicao_1[1] in '123456':
                     print('Digite a letra referente a coluna "A B C E F"')
 
                 elif opc_posicao_1[0] not in 'ABCDE' and opc_posicao_1[1] not in '123456':
-                    print('Digite a letra referente a coluna "A B C E F" , a linha esta numerada de 1 até 6')
+                    print('Digite a letra referente a coluna "A B C E F" , a linha esta numerada de 1 a 6')
 
                 elif opc_posicao_1[0] in 'ABCDE' and opc_posicao_1[1] not in '123456':
-                    print('Você precisa digita a linha no intervalo de 1 até 6')
+                    print('Você precisa digita a linha no intervalo de 1 a 6')
 
                 else:
                     'break'
