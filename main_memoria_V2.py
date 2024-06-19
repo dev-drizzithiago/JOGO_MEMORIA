@@ -114,10 +114,10 @@ def iniciando_jogo():
 
                 elif opc_posicao_1[0] not in "ABCDEF":
                     print('Digite a letra referente a coluna "A B C E F"')
-                elif opc_posicao_1[0] in 'ABCDEF' and opc_posicao_1[1] == "":
+
                     print('Por favor, digite apos a coluna a linha do item.')
                 elif opc_posicao_1[0] in 'ABCDE' and opc_posicao_1[1] not in '123456':
-                    print('A linha esta numerada de 1 até 6')
+                    print('Por favor, digite apos a coluna a linha do item, a linha esta numerada de 1 até 6')
                 else:
                     'break'
 
