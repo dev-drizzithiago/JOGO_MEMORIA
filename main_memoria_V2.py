@@ -114,9 +114,16 @@ def iniciando_jogo():
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
 
                 elif opc_posicao_1 == '999':
-                    _gravando_ponto(ponto_partida)
-                    constinuar_jogo = False
-                    break
+                    if ponto_partida > 0:
+                        _gravando_ponto(ponto_partida)
+                        constinuar_jogo = False
+                        break
+                    else:
+                        print('Saindo do jogo')
+                        sleep(2)
+                        print(f'Sua pontuação foi {ponto_partida}')
+                        sleep(2)
+                        break
 
                 elif len(opc_posicao_1) == 1:
                     if opc_posicao_1 not in 'ABCDE':
@@ -148,10 +155,17 @@ def iniciando_jogo():
 
                 if len(opc_posicao_2) == 0:
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
-                elif opc_posicao_1 == '999':
-                    _gravando_ponto(ponto_partida)
-                    constinuar_jogo = False
-                    break
+                elif opc_posicao_2 == '999':
+                    if ponto_partida > 0:
+                        _gravando_ponto(ponto_partida)
+                        constinuar_jogo = False
+                        break
+                    else:
+                        print('Saindo do jogo')
+                        sleep(2)
+                        print(f'Sua pontuação foi {ponto_partida}')
+                        sleep(2)
+                        break
 
                 elif len(opc_posicao_2) == 1:
                     if opc_posicao_2 not in 'ABCDE':
