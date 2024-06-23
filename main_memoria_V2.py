@@ -113,6 +113,11 @@ def iniciando_jogo():
                 if len(opc_posicao_1) == 0:
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
 
+                elif opc_posicao_1 == '999':
+                    _gravando_ponto(ponto_partida)
+                    constinuar_jogo = False
+                    break
+
                 elif len(opc_posicao_1) == 1:
                     if opc_posicao_1 not in 'ABCDE':
                         print('Voce precisa indicar uma coordenado com as letras  "A B C E F"')
@@ -127,12 +132,10 @@ def iniciando_jogo():
 
                 elif opc_posicao_1[0] in 'ABCDE' and opc_posicao_1[1] not in '123456':
                     print('Você precisa digita a linha no intervalo de 1 a 6')
-                elif opc_posicao_1 == '999':
-                    _gravando_ponto(ponto_partida)
-                    constinuar_jogo = False
-                    break
+
                 else:
                     break
+
         if not constinuar_jogo:
             break
 
