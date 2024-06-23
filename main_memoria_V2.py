@@ -6,7 +6,6 @@ from pathlib import Path
 
 """#### Declaração de variáveis"""
 sorteio_emoj, dados_jogo, inicio_jogo = list(), list(), list()
-#constinuar_jogo = True
 
 pasta_home = Path.home()
 local_arq_pontuacao = str(Path(pasta_home, 'AppData', 'LocalLow', 'Jogo_da_Memoria_V2'))
@@ -104,9 +103,6 @@ def iniciando_jogo():
 
     while True:
 
-        if not constinuar_jogo:
-            break
-
         #  Escolhendo a primeiro opção
         if jogada == 1:
             while True:
@@ -134,8 +130,11 @@ def iniciando_jogo():
                 elif opc_posicao_1 == '999':
                     _gravando_ponto(ponto_partida)
                     constinuar_jogo = False
+                    break
                 else:
                     break
+        if not constinuar_jogo:
+            break
 
         #  A segunda opção vai ser escolhida
         elif jogada == 2:
@@ -164,6 +163,9 @@ def iniciando_jogo():
 
                 else:
                     break
+
+        if not constinuar_jogo:
+            break
 
         #  Primeira analise para as informações de dados
         if jogada == 1:
