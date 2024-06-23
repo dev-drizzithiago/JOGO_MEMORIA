@@ -107,7 +107,7 @@ def iniciando_jogo():
             while True:
                 print()
                 print(linha_aparencia)
-                opc_posicao_1 = input(f"Escolha a {jogada}º posição(voltar=999): ").upper()
+                opc_posicao_1 = input(f"Escolha a {jogada}º posição(finalizar=999): ").upper()
 
                 if len(opc_posicao_1) == 0:
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
@@ -135,7 +135,7 @@ def iniciando_jogo():
             while True:
                 print()
                 print(linha_aparencia)
-                opc_posicao_2 = input(f"Escolha a {jogada}º posição(voltar=999): ").upper()
+                opc_posicao_2 = input(f"Escolha a {jogada}º posição(finalizar=999): ").upper()
 
                 if len(opc_posicao_2) == 0:
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
@@ -305,12 +305,14 @@ def iniciando_jogo():
 
 def _gravando_ponto(valor_entrada):
     print('Fim do jogo.')
+    sleep(2)
     print(f'Sua pontuaçao foi: {valor_entrada}')
+    sleep(2)
     print(linha_aparencia)
     nome_jogador = input('Digite seu nome: ').title()
 
     gravando_pontuacao = open(arq_save_pontos, 'w')
-    gravando_pontuacao.write(f'')
+    gravando_pontuacao.write(f'{nome_jogador} ------ {valor_entrada}')
 
 """### Menu principal"""
 while True:
