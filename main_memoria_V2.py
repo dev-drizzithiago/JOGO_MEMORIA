@@ -126,6 +126,8 @@ def iniciando_jogo():
 
                 elif opc_posicao_1[0] in 'ABCDE' and opc_posicao_1[1] not in '123456':
                     print('Você precisa digita a linha no intervalo de 1 a 6')
+                elif opc_posicao_1 == '999':
+                    _gravando_ponto(ponto_partida)
 
                 else:
                     break
