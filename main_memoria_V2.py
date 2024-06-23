@@ -116,7 +116,7 @@ def iniciando_jogo():
                 elif opc_posicao_1 == '999':
                     if ponto_partida > 0:
                         _gravando_ponto(ponto_partida)
-                        constinuar_jogo = False
+                        continuar_jogo = False
                         break
                     else:
                         print('Saindo do jogo')
@@ -143,7 +143,7 @@ def iniciando_jogo():
                 else:
                     break
 
-        if not constinuar_jogo:
+        if not continuar_jogo:
             break
 
         #  A segunda opção vai ser escolhida
@@ -155,10 +155,11 @@ def iniciando_jogo():
 
                 if len(opc_posicao_2) == 0:
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
+
                 elif opc_posicao_2 == '999':
                     if ponto_partida > 0:
                         _gravando_ponto(ponto_partida)
-                        constinuar_jogo = False
+                        continuar_jogo = False
                         break
                     else:
                         print('Saindo do jogo')
@@ -185,7 +186,7 @@ def iniciando_jogo():
                 else:
                     break
 
-        if not constinuar_jogo:
+        if not continuar_jogo:
             break
 
         #  Primeira analise para as informações de dados
@@ -341,8 +342,15 @@ def _gravando_ponto(valor_entrada):
     print(linha_aparencia)
     nome_jogador = input('Digite seu nome: ').title()
 
-    gravando_pontuacao = open(arq_save_pontos, 'w')
-    gravando_pontuacao.write(f'{nome_jogador} ------ {valor_entrada}')
+    try:
+        lendo_dados_salvos = open(arq_save_pontos, 'r')
+        print(lendo_dados_salvos)
+
+    except FileNotFoundError:
+        pass
+
+    gravando_pontuacao = open(arq_save_pontos, 'a')
+    gravando_pontuacao.write(f'{nome_jogador} ------ {valor_entrada}\n')
 
 """### Menu principal"""
 while True:
