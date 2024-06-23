@@ -17,7 +17,7 @@ except FileExistsError:
 
 try:
     arq_pontuacao = 'Pontuação Geral.txt'
-    arq_save_pontos = f'{local_arq_pontuacao}\\{"Jogo da Memoria V2\\" + arq_pontuacao}'
+    arq_save_pontos = f'{local_arq_pontuacao}\\{arq_pontuacao}'
 except FileExistsError:
     pass
 
@@ -148,6 +148,10 @@ def iniciando_jogo():
 
                 if len(opc_posicao_2) == 0:
                     print('Escolha uma coluna (Letras) e uma linha (Números)')
+                elif opc_posicao_1 == '999':
+                    _gravando_ponto(ponto_partida)
+                    constinuar_jogo = False
+                    break
 
                 elif len(opc_posicao_2) == 1:
                     if opc_posicao_2 not in 'ABCDE':
