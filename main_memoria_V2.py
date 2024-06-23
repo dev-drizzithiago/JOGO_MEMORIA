@@ -6,7 +6,7 @@ from pathlib import Path
 
 """#### Declaração de variáveis"""
 sorteio_emoj, dados_jogo, inicio_jogo = list(), list(), list()
-constinuar_jogo = True
+#constinuar_jogo = True
 
 pasta_home = Path.home()
 local_arq_pontuacao = str(Path(pasta_home, 'AppData', 'LocalLow', 'Jogo_da_Memoria_V2'))
