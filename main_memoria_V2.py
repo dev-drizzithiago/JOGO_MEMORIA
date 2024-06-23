@@ -102,7 +102,10 @@ def iniciando_jogo():
         for coluna in linha:
             print(coluna, end=' ')
 
-    while constinuar_jogo:
+    while True:
+
+        if not constinuar_jogo:
+            break
 
         #  Escolhendo a primeiro opção
         if jogada == 1:
@@ -130,7 +133,7 @@ def iniciando_jogo():
                     print('Você precisa digita a linha no intervalo de 1 a 6')
                 elif opc_posicao_1 == '999':
                     _gravando_ponto(ponto_partida)
-                    constinuar_jogo = True
+                    constinuar_jogo = False
                 else:
                     break
 
