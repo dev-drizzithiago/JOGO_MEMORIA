@@ -6,9 +6,11 @@ from pathlib import Path
 
 """#### Declaração de variáveis"""
 sorteio_emoj, dados_jogo, inicio_jogo = list(), list(), list()
+finalizar_jogo = False
 
 pasta_home = Path.home()
 local_arq_pontuacao = str(Path(pasta_home, 'AppData', 'LocalLow', 'Jogo_da_Memoria_V2'))
+
 try:
     mkdir(local_arq_pontuacao)
 except FileExistsError:
@@ -100,7 +102,7 @@ def iniciando_jogo():
         for coluna in linha:
             print(coluna, end=' ')
 
-    while True:
+    while finalizar_jogo:
 
         #  Escolhendo a primeiro opção
         if jogada == 1:
@@ -128,7 +130,7 @@ def iniciando_jogo():
                     print('Você precisa digita a linha no intervalo de 1 a 6')
                 elif opc_posicao_1 == '999':
                     _gravando_ponto(ponto_partida)
-
+                    finalizar_jogo = True
                 else:
                     break
 
