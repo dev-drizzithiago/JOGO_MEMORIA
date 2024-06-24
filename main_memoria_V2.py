@@ -7,6 +7,7 @@ from pathlib import Path
 """#### Declaração de variáveis"""
 sorteio_emoj, dados_jogo, inicio_jogo = list(), list(), list()
 
+
 pasta_home = Path.home()
 local_arq_pontuacao = str(Path(pasta_home, 'AppData', 'LocalLow', 'Jogo_da_Memoria_V2'))
 
@@ -90,6 +91,7 @@ def leia_int(valor_entrada):
 def iniciando_jogo():
     linha_a, coluna_a, linha_b, coluna_b = 0, 0, 0, 0
     ponto_partida, ponto_final = 0, 0
+    continuar_jogo = True
 
     jogada = 1
     resposta_1, resposta_2 = '', ''
