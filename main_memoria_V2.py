@@ -23,6 +23,7 @@ except FileExistsError:
 
 linha_aparencia = '--==--' * 15
 
+
 def construcao_do_jogo():
     """
     Função responsável em construir toda a estrutura do jogo.
@@ -351,6 +352,7 @@ def _gravando_ponto(valor_entrada):
 
     gravando_pontuacao = open(arq_save_pontos, 'a')
     gravando_pontuacao.write(f'{nome_jogador} ------ {valor_entrada}\n')
+
 
 """### Menu principal"""
 while True:
