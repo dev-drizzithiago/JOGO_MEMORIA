@@ -358,7 +358,7 @@ def _gravando_ponto(valor_entrada):
 def _visualizar_pontuacao_geral():
     abrindo_dados_pontuacao = open(arq_save_pontos, 'r')
     for valor_pontos in abrindo_dados_pontuacao:
-        print(valor_pontos)
+        print(f'Pontuação: {valor_pontos}')
 
 """### Menu principal"""
 while True:
@@ -375,7 +375,7 @@ while True:
         iniciando_jogo()
 
     elif resp_opcao_menu == 2:
-        _visualizar_pontuacao_geral
+        _visualizar_pontuacao_geral()
 
     elif resp_opcao_menu == 0:
         print('Fechando o Programa')
