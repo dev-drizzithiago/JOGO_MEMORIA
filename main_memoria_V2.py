@@ -338,12 +338,17 @@ def iniciando_jogo():
 
 
 def _gravando_ponto(valor_entrada):
-    print('Fim do jogo.')
-    sleep(2)
+    print('dSindo do jogo.')
+    sleep(1)
     print(f'Sua pontuaçao foi: {valor_entrada}')
-    sleep(2)
+    sleep(1)
     print(linha_aparencia)
     nome_jogador = input('Digite seu nome: ').title()
+
+    """# Aqui será analisado que possui mais pontos, caso o usuário finalizar o jogo, se ele não conseguir atingir a 
+    pontuação do primeiro, precisa se manter na posição de seu ponto atual.    
+    """
+    lendo_pontos_salvos = open(arq_save_pontos, 'r')
 
     try:
         lendo_dados_salvos = open(arq_save_pontos, 'r')
@@ -353,12 +358,14 @@ def _gravando_ponto(valor_entrada):
         pass
 
     gravando_pontuacao = open(arq_save_pontos, 'a')
-    gravando_pontuacao.write(f'{nome_jogador} ------ {valor_entrada}\n')
+    gravando_pontuacao.write(f'{nome_jogador};{valor_entrada}\n')
 
 def _visualizar_pontuacao_geral():
     abrindo_dados_pontuacao = open(arq_save_pontos, 'r')
     for valor_pontos in abrindo_dados_pontuacao:
-        print(f'Pontuação: {valor_pontos}')
+        quebra_info_ponto = str(valor_pontos).replace(';', '-----')
+
+        print(f'Pontuação: {quebra_info_ponto}')
 
 """### Menu principal"""
 while True:
