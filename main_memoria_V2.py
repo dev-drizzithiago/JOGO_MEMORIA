@@ -348,11 +348,10 @@ def _gravando_ponto(valor_entrada):
     """# Aqui será analisado que possui mais pontos, caso o usuário finalizar o jogo, se ele não conseguir atingir a 
     pontuação do primeiro, precisa se manter na posição de seu ponto atual.    
     """
-    lendo_pontos_salvos = open(arq_save_pontos, 'r')
 
     try:
-        lendo_dados_salvos = open(arq_save_pontos, 'r')
-        print(lendo_dados_salvos)
+        lendo_pontos_salvos = open(arq_save_pontos, 'r')
+        print(lendo_pontos_salvos)
 
     except FileNotFoundError:
         pass
@@ -363,7 +362,7 @@ def _gravando_ponto(valor_entrada):
 def _visualizar_pontuacao_geral():
     abrindo_dados_pontuacao = open(arq_save_pontos, 'r')
     for valor_pontos in abrindo_dados_pontuacao:
-        quebra_info_ponto = str(valor_pontos).replace(';', '-----')
+        quebra_info_ponto = str(valor_pontos).replace(';', ' ----- ')
 
         print(f'Pontuação: {quebra_info_ponto}')
 
