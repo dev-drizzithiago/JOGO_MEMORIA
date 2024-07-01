@@ -173,7 +173,7 @@ def iniciando_jogo():
 
                 elif len(opc_posicao_2) == 1:
                     if opc_posicao_2 not in 'ABCDE':
-                        print('Voce precisa indicar uma coordenado com as letras  "A B C E F"')
+                        print('Voce precisa indicar uma coordenado com as letras  "A B C E D"')
                     elif opc_posicao_2 in 'ABCDE':
                         print('Você precisa indicar a linha no intervalo de 1 a 6')
 
