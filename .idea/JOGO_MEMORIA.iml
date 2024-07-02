@@ -8,5 +8,6 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.12 (JOGO_MEMORIA)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Projetos_Geral_V1" />
   </component>
 </module>
