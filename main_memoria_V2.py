@@ -360,8 +360,12 @@ def _gravando_ponto(valor_entrada):
     gravando_pontuacao.write(f'{nome_jogador};{valor_entrada}\n')
 
 def _visualizar_pontuacao_geral():
+    lista_pontuacao =[]
     abrindo_dados_pontuacao = open(arq_save_pontos, 'r')
-    for valor_pontos in abrindo_dados_pontuacao:
+    lista_pontuacao = abrindo_dados_pontuacao.readlines()
+    lista_pontuacao.sort()
+    print(lista_pontuacao)
+    for valor_pontos in lista_pontuacao:
         quebra_info_ponto = str(valor_pontos).replace(';', ' ----- ')
 
         print(f'Pontuação: {quebra_info_ponto}')
