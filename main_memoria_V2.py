@@ -338,9 +338,9 @@ def iniciando_jogo():
 
 
 def _gravando_ponto(valor_entrada):
-    print('dSindo do jogo.')
+    print('Finalizado o jogo.')
     sleep(1)
-    print(f'Sua pontuaçao foi: {valor_entrada}')
+    print(f'Sua pontuaçao foi: [{valor_entrada}]')
     sleep(1)
     print(linha_aparencia)
     nome_jogador = input('Digite seu nome: ').title()
@@ -351,7 +351,6 @@ def _gravando_ponto(valor_entrada):
 
     try:
         lendo_pontos_salvos = open(arq_save_pontos, 'r')
-        print(lendo_pontos_salvos)
 
     except FileNotFoundError:
         pass
