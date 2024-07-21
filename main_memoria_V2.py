@@ -349,15 +349,19 @@ def _gravando_ponto(valor_entrada):
     pontuação do primeiro, precisa se manter na posição de seu ponto atual.    
     """
     gravando_pontuacao = open(arq_save_pontos, 'a')
-    gravando_pontuacao.write(f'{nome_jogador};{valor_entrada}\n')
+    gravando_pontuacao.write(f'{valor_entrada};{nome_jogador}\n')
 
 def _visualizar_pontuacao_geral():
     lista_pontuacao = []
     abrindo_dados_pontuacao = open(arq_save_pontos, 'r')
-    lista_pontuacao = abrindo_dados_pontuacao.readlines()
-    lista_pontuacao.sort()
-    print(lista_pontuacao)
-    for valor_pontos in lista_pontuacao:
+    valor_lista_pontuacao = abrindo_dados_pontuacao.readlines()
+
+    valor_ponto = int(valor_lista_pontuacao[0])
+    valor_nome = valor_lista_pontuacao[1]
+    valor_lista_pontuacao.sort()
+
+    print(valor_lista_pontuacao)
+    for valor_pontos in valor_lista_pontuacao:
         quebra_info_ponto = str(valor_pontos).replace(';', ' ----- ')
 
         print(f'Pontuação: {quebra_info_ponto}')
