@@ -348,18 +348,11 @@ def _gravando_ponto(valor_entrada):
     """# Aqui será analisado que possui mais pontos, caso o usuário finalizar o jogo, se ele não conseguir atingir a 
     pontuação do primeiro, precisa se manter na posição de seu ponto atual.    
     """
-
-    try:
-        lendo_pontos_salvos = open(arq_save_pontos, 'r')
-
-    except FileNotFoundError:
-        pass
-
     gravando_pontuacao = open(arq_save_pontos, 'a')
     gravando_pontuacao.write(f'{nome_jogador};{valor_entrada}\n')
 
 def _visualizar_pontuacao_geral():
-    lista_pontuacao =[]
+    lista_pontuacao = []
     abrindo_dados_pontuacao = open(arq_save_pontos, 'r')
     lista_pontuacao = abrindo_dados_pontuacao.readlines()
     lista_pontuacao.sort()
