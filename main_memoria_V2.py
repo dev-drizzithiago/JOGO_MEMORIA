@@ -90,7 +90,7 @@ def leia_int(valor_entrada):
 
 def iniciando_jogo():
     linha_a, coluna_a, linha_b, coluna_b = 0, 0, 0, 0
-    ponto_partida, ponto_final = 0, 0
+    ponto_partida = 1
     continuar_jogo = True
 
     jogada = 1
@@ -228,6 +228,7 @@ def iniciando_jogo():
                     del estrutura[:]  # As listas são limpas quando sair do jogo
                     del sorteio_emoj[:]  # As listas são limpas quando sair do jogo
                     print('Saindo do jogo!')
+                    _gravando_ponto(ponto_partida)
                     break  # Quebra o loop
                 else:
                     print('Voltando ao jogo!')
@@ -267,6 +268,7 @@ def iniciando_jogo():
                     del estrutura[:]
                     del sorteio_emoj[:]
                     print('Saindo do jogo!')
+                    _gravando_ponto(ponto_partida)
                     break
                 else:
                     print('Voltando ao jogo!')
@@ -352,7 +354,7 @@ def _gravando_ponto(valor_entrada):
     pontuação do primeiro, precisa se manter na posição de seu ponto atual.    
     """
     gravando_pontuacao = open(arq_save_pontos, 'a')
-    if len(valor_entrada) == 2:
+    if len(str(valor_entrada)) == 2:
         gravando_pontuacao.write(f'{valor_entrada};{nome_jogador}\n')
     else:
         gravando_pontuacao.write(f'0{valor_entrada};{nome_jogador}\n')
@@ -364,8 +366,7 @@ def _visualizar_pontuacao_geral():
 
     print(valor_lista_pontuacao)
     for valor_pontos in valor_lista_pontuacao:
-        quebra_info_ponto = str(valor_pontos).replace(';', ' ----- ')
-
+        quebra_info_ponto = str(valor_pontos).replace(';', ' --- ')
         print(f'Pontuação: {quebra_info_ponto}')
 
 
