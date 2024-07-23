@@ -122,6 +122,7 @@ def iniciando_jogo():
                         continuar_jogo = False
                         break
                     else:
+                        print()
                         print('Saindo do jogo')
                         sleep(2)
                         print(f'Sua pontuação foi {ponto_partida}')
@@ -129,6 +130,7 @@ def iniciando_jogo():
                         break
 
                 elif len(opc_posicao_1) == 1:
+
                     if opc_posicao_1 not in 'ABCDE':
                         print('Voce precisa indicar uma coordenado com as letras  " A B C D E "')
                     elif opc_posicao_1 in 'ABCDE':
@@ -144,6 +146,7 @@ def iniciando_jogo():
                     print('Você precisa digita a linha no intervalo de 1 a 6')
 
                 else:
+
                     break
 
         if not continuar_jogo:
