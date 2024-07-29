@@ -88,6 +88,10 @@ def leia_int(valor_entrada):
 
 
 def iniciando_jogo():
+    """
+    Verificar problema de loop. Quando said o jogo e retorna um novo, gera erro
+    :return:
+    """
     linha_a, coluna_a, linha_b, coluna_b = 0, 0, 0, 0
     ponto_partida = 0
     continuar_jogo = True
