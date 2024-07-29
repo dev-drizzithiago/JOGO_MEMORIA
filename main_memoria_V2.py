@@ -222,7 +222,12 @@ def iniciando_jogo():
                 resposta_1 = dados_sorteio[linha_a - 1][coluna_a - 1]
 
             elif opc_posicao_1 == '999':
-                resp = input("Tem certeza que desaja sair? Todo o progressão serão perdidos(S/N): ").upper()
+                while True:
+                    resp = input("Tem certeza que desaja sair? Todo o progressão serão perdidos(S/N): ").upper()
+                    if len(resp) == 0:
+                        print('Opção inválida')
+                    else:
+                        break
                 if resp[0] == 'S':
                     del estrutura[:]  # As listas são limpas quando sair do jogo
                     del sorteio_emoj[:]  # As listas são limpas quando sair do jogo
