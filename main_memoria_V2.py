@@ -7,7 +7,6 @@ from pathlib import Path
 """#### Declaração de variáveis"""
 sorteio_emoj, dados_jogo, inicio_jogo = list(), list(), list()
 
-
 pasta_home = Path.home()
 local_arq_pontuacao = str(Path(pasta_home, 'AppData', 'LocalLow', 'Jogo_da_Memoria_V2'))
 
@@ -358,6 +357,7 @@ def _gravando_ponto(valor_entrada):
         gravando_pontuacao.write(f'{valor_entrada};{nome_jogador}\n')
     else:
         gravando_pontuacao.write(f'0{valor_entrada};{nome_jogador}\n')
+
 
 def _visualizar_pontuacao_geral():
     abrindo_dados_pontuacao = open(arq_save_pontos, 'r')
