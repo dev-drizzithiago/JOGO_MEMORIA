@@ -89,7 +89,7 @@ def leia_int(valor_entrada):
 
 def iniciando_jogo():
     linha_a, coluna_a, linha_b, coluna_b = 0, 0, 0, 0
-    ponto_partida = 2
+    ponto_partida = 12
     continuar_jogo = True
 
     jogada = 1
