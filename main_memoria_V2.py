@@ -89,7 +89,7 @@ def leia_int(valor_entrada):
 
 def iniciando_jogo():
     linha_a, coluna_a, linha_b, coluna_b = 0, 0, 0, 0
-    ponto_partida = 12
+    ponto_partida = 0
     continuar_jogo = True
 
     jogada = 1
@@ -222,15 +222,17 @@ def iniciando_jogo():
                 resposta_1 = dados_sorteio[linha_a - 1][coluna_a - 1]
 
             elif opc_posicao_1 == '999':
-                resp = input("Tem certeza que desaja sair? Vai perder todo o progresso (S/N): ").upper()
+                resp = input("Tem certeza que desaja sair? Todo o progressão serão perdidos(S/N): ").upper()
                 if resp[0] == 'S':
                     del estrutura[:]  # As listas são limpas quando sair do jogo
                     del sorteio_emoj[:]  # As listas são limpas quando sair do jogo
                     print('Saindo do jogo!')
                     _gravando_ponto(ponto_partida)
                     break  # Quebra o loop
-                else:
+                elif resp[0] == 'N':
                     print('Voltando ao jogo!')
+                else:
+                    print('Opção invalida!')
             else:
                 print('Opção não existe!')
 
@@ -269,6 +271,8 @@ def iniciando_jogo():
                     print('Saindo do jogo!')
                     _gravando_ponto(ponto_partida)
                     break
+                elif resp[0] == 'N':
+                    print('Próxima Rodada!')
                 else:
                     print('Voltando ao jogo!')
             else:
