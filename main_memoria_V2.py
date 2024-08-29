@@ -381,6 +381,7 @@ def _visualizar_pontuacao_geral():
     for valor_pontos in valor_lista_pontuacao:
         quebra_info_ponto = str(valor_pontos).replace(';', ' --- ')
         print(f'Pontuação: {quebra_info_ponto}')
+        print(f'Pontuação: {quebra_info_ponto=}')  # O sinal na frente da variavel mostra a variavel e o valor
 
 
 """### Menu principal"""
