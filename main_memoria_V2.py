@@ -375,9 +375,9 @@ def _gravando_ponto(valor_entrada):
 def _visualizar_pontuacao_geral():
     abrindo_dados_pontuacao = open(arq_save_pontos, 'r')
     valor_lista_pontuacao = abrindo_dados_pontuacao.readlines()
-    list(valor_lista_pontuacao)
+    lista_com_valores = list(valor_lista_pontuacao)
 
-    for valor_pontos in valor_lista_pontuacao:
+    for valor_pontos in lista_com_valores:
         print(valor_pontos)
 
 
