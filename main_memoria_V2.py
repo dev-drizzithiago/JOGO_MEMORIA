@@ -375,13 +375,10 @@ def _gravando_ponto(valor_entrada):
 def _visualizar_pontuacao_geral():
     abrindo_dados_pontuacao = open(arq_save_pontos, 'r')
     valor_lista_pontuacao = abrindo_dados_pontuacao.readlines()
-    valor_lista_pontuacao.sort()
+    list(valor_lista_pontuacao)
 
-    print(valor_lista_pontuacao)
     for valor_pontos in valor_lista_pontuacao:
-        quebra_info_ponto = str(valor_pontos).replace(';', ' --- ')
-        print(f'Pontuação: {quebra_info_ponto}')
-        print(f'Pontuação: {quebra_info_ponto=}')  # O sinal na frente da variavel mostra a variavel e o valor
+        print(valor_pontos)
 
 
 """### Menu principal"""
