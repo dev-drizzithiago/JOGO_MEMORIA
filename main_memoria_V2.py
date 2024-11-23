@@ -385,7 +385,8 @@ def _visualizar_pontuacao_geral():
     arquivos_ordenados = sorted(lista_com_valores, key=ordenando_pontos)
 
     for pontuacao in arquivos_ordenados:
-        print(pontuacao)
+        ponto_formatado = pontuacao.replace(';', '° --- ')
+        print(ponto_formatado)
 
 
 """### Menu principal"""
