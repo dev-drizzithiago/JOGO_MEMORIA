@@ -382,21 +382,23 @@ def _visualizar_pontuacao_geral():
     def ordenando_pontos(nome_arquivo):
         return [int(num) for num in re.findall(r'\d+', nome_arquivo)]
 
-    arquivos_ordenados = sorted(lista_com_valores, key=ordenando_pontos)
+    lista_com_valores.sort(key=ordenando_pontos, reverse=True)
 
-    for pontuacao in arquivos_ordenados:
+    posicao = 1
+
+    for pontuacao in lista_com_valores:
         separacao_ponto_nome = pontuacao.split(';')
+        pontuacao = str(separacao_ponto_nome[0])
+        nome_jogador = str(separacao_ponto_nome[1])
 
-        formatando_potuacao = str(separacao_ponto_nome[0])
-
-        if len(formatando_potuacao) == 1:
-            ponto_formatado = f'0{formatando_potuacao}'
+        if len(pontuacao) == 1:
+            ponto_formatado = f'0{pontuacao}'
         else:
-            ponto_formatado = f'{formatando_potuacao}'
+            ponto_formatado = f'{pontuacao}'
 
-        print(ponto_formatado)
-        print(separacao_ponto_nome[1])
+        print(f'{posicao}° Lugar: {nome_jogador} --- {ponto_formatado}')
 
+        posicao += 1
 
 
 """### Menu principal"""
