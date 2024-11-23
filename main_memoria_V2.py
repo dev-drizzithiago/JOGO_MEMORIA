@@ -1,4 +1,6 @@
 import random
+import re
+
 import numpy
 from os import mkdir
 from time import sleep
@@ -377,8 +379,13 @@ def _visualizar_pontuacao_geral():
     valor_lista_pontuacao = abrindo_dados_pontuacao.readlines()
     lista_com_valores = list(valor_lista_pontuacao)
 
-    for valor_pontos in lista_com_valores:
-        print(valor_pontos)
+    def ordenando_pontos(nome_arquivo):
+        return [int(num) for num in re.findall(r'\d+', nome_arquivo)]
+
+    arquivos_ordenados = sorted(lista_com_valores, key=ordenando_pontos)
+
+    for pontuacao in arquivos_ordenados:
+        print(pontuacao)
 
 
 """### Menu principal"""
