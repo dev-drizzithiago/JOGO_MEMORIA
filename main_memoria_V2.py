@@ -388,6 +388,7 @@ def _visualizar_pontuacao_geral():
 
     for pontuacao in lista_com_valores:
         separacao_ponto_nome = pontuacao.split(';')
+
         pontuacao = str(separacao_ponto_nome[0])
         nome_jogador = str(separacao_ponto_nome[1])
 
@@ -396,7 +397,7 @@ def _visualizar_pontuacao_geral():
         else:
             ponto_formatado = f'{pontuacao}'
 
-        print(f'{posicao}° Lugar: {nome_jogador} --- {ponto_formatado}')
+        print(f'{posicao}° - {nome_jogador} - {ponto_formatado}')
 
         posicao += 1
 
