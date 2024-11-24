@@ -389,8 +389,8 @@ def _visualizar_pontuacao_geral():
     for pontuacao in lista_com_valores:
         separacao_ponto_nome = pontuacao.split(';')
 
-        pontuacao = str(separacao_ponto_nome[0])
-        nome_jogador = str(separacao_ponto_nome[1])
+        pontuacao = str(separacao_ponto_nome[0]).strip()
+        nome_jogador = str(separacao_ponto_nome[1]).strip()
 
         if len(pontuacao) == 1:
             ponto_formatado = f'0{pontuacao}'
