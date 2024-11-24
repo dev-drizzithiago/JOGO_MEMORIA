@@ -6,7 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Interpretador_jogo_da_memoria" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.12 (DJANGO)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.12 (Interpretador)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Projetos_Geral_V1" />
     <orderEntry type="module" module-name="Projeto_YOUTUBE" />
